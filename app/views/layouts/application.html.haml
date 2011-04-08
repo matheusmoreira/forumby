@@ -1,0 +1,16 @@
+!!! 5
+%html
+  %head
+    %title= t 'forumby.title'
+    = stylesheet_link_tag 'screen', media: 'screen, projection'
+    = stylesheet_link_tag 'print', media: 'print'
+    /[if lt IE 8]
+      = stylesheet_link_tag 'ie', media: 'screen, projection'
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
+    = yield :head
+  %body
+    = render 'shared/messages'
+    = render 'shared/header'
+    #forumby= yield
+    = render 'shared/footer'
