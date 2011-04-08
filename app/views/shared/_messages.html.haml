@@ -1,6 +1,11 @@
 - if flash[:notice]
-  %section.notice= flash[:notice]
+  .notice= flash[:notice]
+
+- if flash[:alert]
+  .alert= flash[:alert]
+
 - if flash[:error]
-  %section.error= flash[:error]
+  .error= flash[:error]
+
 - if flash[:success]
-  %section.success= flash[:success]
+  .success= flash[:success]
