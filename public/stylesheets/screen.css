@@ -81,7 +81,7 @@ a img {
   border: none;
 }
 
-/* line 4, ../../app/stylesheets/partials/_page.sass */
+/* line 3, ../../app/stylesheets/partials/_body.sass */
 body {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -398,13 +398,15 @@ body .removed {
 
 /* line 44, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 div.border {
+  padding-right: 4px;
+  margin-right: 5px;
   border-right: 1px solid #eeeeee;
 }
 
 /* line 47, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 div.colborder {
-  padding-right: 2.084%;
-  margin-right: 2.084%;
+  padding-right: 24px;
+  margin-right: 25px;
   border-right: 1px solid #eeeeee;
 }
 
@@ -413,11 +415,10 @@ hr {
   background: #dddddd;
   color: #dddddd;
   clear: both;
+  float: none;
   width: 100%;
-  height: 0.083em;
-  margin: 0;
-  margin-left: 2.084%;
-  margin-right: 2.084%;
+  height: 0.1em;
+  margin: 0 0 1.45em;
   border: none;
 }
 
@@ -426,14 +427,14 @@ hr.space {
   background: #dddddd;
   color: #dddddd;
   clear: both;
+  float: none;
   width: 100%;
-  height: 0.083em;
-  margin: 0;
-  margin-left: 2.084%;
-  margin-right: 2.084%;
+  height: 0.1em;
+  margin: 0 0 1.45em;
   border: none;
   background: white;
   color: white;
+  visibility: hidden;
 }
 
 /* line 53, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
