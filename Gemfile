@@ -20,11 +20,7 @@ gem 'decent_exposure'
 group :development do
 
   # SQLite database
-  gem 'sqlite3'
-
-  # Devise dependencies
-  gem 'hpricot'
-  gem 'ruby_parser'
+  gem 'sqlite3
 
   # Compass CSS statistics
   gem 'css_parser'
