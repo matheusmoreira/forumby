@@ -1,3 +1,8 @@
 en:
   forumby:
     title: 'Forumby'
+  members:
+    index:
+      heading: 'All Members'
+    show:
+      heading: 'Showing Member'

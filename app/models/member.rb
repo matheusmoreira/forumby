@@ -10,4 +10,9 @@ class Member < ActiveRecord::Base
          :validatable
 
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me
+
+  def self.per_page
+    50
+  end
+
 end
