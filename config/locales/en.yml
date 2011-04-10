@@ -1,6 +1,15 @@
 en:
   forumby:
-    title: 'Forumby'
+    forum_title: 'Forumby'
+    forum_name: 'Forumby'
+    copyright: 'Powered by Forumby'
+  header:
+    member:
+      logout: 'Logout'
+      login: 'Login'
+      register: 'Register'
+      edit_profile: 'Edit profile'
+      not_logged_in: 'Not logged in'
   members:
     index:
       heading: 'All Members'

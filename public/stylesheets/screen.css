@@ -81,7 +81,7 @@ a img {
   border: none;
 }
 
-/* line 3, ../../app/stylesheets/partials/_body.sass */
+/* line 4, ../../app/stylesheets/partials/_body.sass */
 body {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -388,6 +388,31 @@ body .removed {
   background: #990000;
   color: white;
 }
+/* line 2, ../../app/stylesheets/partials/_links.sass */
+body a {
+  text-decoration: none;
+  color: #0000cc;
+}
+/* line 4, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_hover-link.scss */
+body a:hover {
+  text-decoration: underline;
+}
+/* line 18, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+body a:visited {
+  color: #0000cc;
+}
+/* line 21, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+body a:focus {
+  color: #0000cc;
+}
+/* line 24, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+body a:hover {
+  color: #0033ff;
+}
+/* line 27, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+body a:active {
+  color: #000099;
+}
 
 /* line 41, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 .box {
@@ -506,4 +531,112 @@ form input.text, form input.title, form input[type=email], form input[type=text]
 form textarea {
   width: 390px;
   height: 250px;
+}
+
+/* line 9, ../../app/stylesheets/header.sass */
+header {
+  display: block;
+  background-color: #80a6d5;
+  border-bottom: 1px solid #333333;
+  padding: 8px;
+}
+/* line 17, ../../app/stylesheets/header.sass */
+header #forum-name {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  margin: 24px 0px;
+  font-size: 6em;
+  color: white;
+}
+/* line 7, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+header #forum-name {
+  *display: inline;
+}
+/* line 25, ../../app/stylesheets/header.sass */
+header #member-panel {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  background-color: #a2c8f7;
+  margin: 8px;
+  padding: 8px;
+}
+/* line 7, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+header #member-panel {
+  *display: inline;
+}
+/* line 34, ../../app/stylesheets/header.sass */
+header #member-panel p {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  margin: 0px;
+  font-size: 2em;
+}
+/* line 7, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+header #member-panel p {
+  *display: inline;
+}
+/* line 41, ../../app/stylesheets/header.sass */
+header #member-panel .links {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  border-left: 1px solid #6f95c4;
+  margin-left: 4px;
+  padding-left: 4px;
+}
+/* line 7, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+header #member-panel .links {
+  *display: inline;
+}
+/* line 48, ../../app/stylesheets/header.sass */
+header #member-panel .links a {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  padding: 4px;
+  font-size: 1.5em;
+}
+/* line 7, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+header #member-panel .links a {
+  *display: inline;
+}
+
+/* line 3, ../../app/stylesheets/forumby.sass */
+#forumby {
+  display: block;
+  margin: 16px;
+  padding: 16px;
+}
+
+/* line 3, ../../app/stylesheets/footer.sass */
+footer {
+  display: block;
+  border-top: 1px solid #333333;
+  padding-top: 24px;
+}
+/* line 9, ../../app/stylesheets/footer.sass */
+footer p {
+  display: block;
+  font-size: 1.2em;
+  text-align: center;
 }

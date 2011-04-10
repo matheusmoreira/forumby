@@ -1,0 +1,53 @@
+@import partials/block
+@import partials/round-block
+
+$header-padding: 8px
+$member-panel-border-radius: 8px
+$header-background-color: #80a6d5
+$forum-name-color: #fff
+
+header
+  +block
+
+  background-color: $header-background-color
+
+  border-bottom: 1px solid #333
+  padding: $header-padding
+
+  #forum-name
+    +inline-block
+
+    margin: 24px 0px
+
+    font-size: 6em
+    color: $forum-name-color
+
+  #member-panel
+    +round-block($member-panel-border-radius)
+    +inline-block
+
+    background-color: $header-background-color + #222
+
+    margin: 8px
+    padding: 8px
+
+    p
+      +inline-block
+
+      margin: 0px
+
+      font-size: 2em
+
+    .links
+      +inline-block
+
+      border-left: 1px solid $header-background-color - #111
+      margin-left: 4px
+      padding-left: 4px
+
+      a
+        +inline-block
+
+        padding: 4px
+
+        font-size: 1.5em

@@ -1,0 +1,13 @@
+%header
+  %h1#forum-name= t 'forumby.forum_name'
+  #member-panel
+    - if member_signed_in?
+      %p= link_to current_member.name, member_path(current_member)
+      .links
+        = link_to t('header.member.edit_profile'), edit_member_registration_path
+        = link_to t('header.member.logout'), destroy_member_session_path
+    - else
+      %p= t 'header.member.not_logged_in'
+      .links
+        = link_to t('header.member.login'), new_member_session_path
+        = link_to t('header.member.register'), new_member_registration_path

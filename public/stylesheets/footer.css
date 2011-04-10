@@ -1,0 +1,12 @@
+/* line 3, ../../app/stylesheets/footer.sass */
+footer {
+  display: block;
+  border-top: 1px solid #333333;
+  padding-top: 24px;
+}
+/* line 9, ../../app/stylesheets/footer.sass */
+footer p {
+  display: block;
+  font-size: 1.2em;
+  text-align: center;
+}
