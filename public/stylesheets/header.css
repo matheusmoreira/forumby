@@ -1,23 +1,23 @@
 /*
 Syntax error: Undefined mixin 'inline-block'.
-        on line 18 of /home/matheus/projects/forumby/app/stylesheets/header.sass, in `inline-block'
-        from line 18 of /home/matheus/projects/forumby/app/stylesheets/header.sass
+        on line 17 of /home/matheus/projects/forumby/app/stylesheets/header.sass, in `inline-block'
+        from line 17 of /home/matheus/projects/forumby/app/stylesheets/header.sass
 
-13: 
-14:   border-bottom: 1px solid #333
-15:   padding: $header-padding
-16: 
-17:   #forum-name
-18:     +inline-block
-19: 
-20:     margin: 24px 0px
-21: 
-22:     font-size: 6em
-23:     color: $forum-name-color
+12: 
+13:   border-bottom: 1px solid #333
+14:   padding: $header-padding
+15: 
+16:   #forum-name
+17:     +inline-block
+18: 
+19:     margin: 24px 0px
+20: 
+21:     font-size: 6em
+22:     color: $forum-name-color
 
 Backtrace:
-/home/matheus/projects/forumby/app/stylesheets/header.sass:18:in `inline-block'
-/home/matheus/projects/forumby/app/stylesheets/header.sass:18
+/home/matheus/projects/forumby/app/stylesheets/header.sass:17:in `inline-block'
+/home/matheus/projects/forumby/app/stylesheets/header.sass:17
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:62:in `perform!'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
@@ -92,4 +92,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'inline-block'.\A         on line 18 of /home/matheus/projects/forumby/app/stylesheets/header.sass, in `inline-block'\A         from line 18 of /home/matheus/projects/forumby/app/stylesheets/header.sass\A \A 13: \A 14:   border-bottom: 1px solid #333\A 15:   padding: $header-padding\A 16: \A 17:   #forum-name\A 18:     +inline-block\A 19: \A 20:     margin: 24px 0px\A 21: \A 22:     font-size: 6em\A 23:     color: $forum-name-color"; }
+  content: "Syntax error: Undefined mixin 'inline-block'.\A         on line 17 of /home/matheus/projects/forumby/app/stylesheets/header.sass, in `inline-block'\A         from line 17 of /home/matheus/projects/forumby/app/stylesheets/header.sass\A \A 12: \A 13:   border-bottom: 1px solid #333\A 14:   padding: $header-padding\A 15: \A 16:   #forum-name\A 17:     +inline-block\A 18: \A 19:     margin: 24px 0px\A 20: \A 21:     font-size: 6em\A 22:     color: $forum-name-color"; }

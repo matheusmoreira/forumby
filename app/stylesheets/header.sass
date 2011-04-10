@@ -1,5 +1,4 @@
 @import partials/block
-@import partials/round-block
 
 $header-padding: 8px
 $member-panel-border-radius: 8px
@@ -23,8 +22,9 @@ header
     color: $forum-name-color
 
   #member-panel
-    +round-block($member-panel-border-radius)
+    +border-radius($member-panel-border-radius)
     +inline-block
+    +float-right
 
     background-color: $header-background-color + #222
 
@@ -50,4 +50,4 @@ header
 
         padding: 4px
 
-        font-size: 1.5em
+        font-size: 1.4em

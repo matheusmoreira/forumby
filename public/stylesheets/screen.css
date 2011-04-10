@@ -533,14 +533,14 @@ form textarea {
   height: 250px;
 }
 
-/* line 9, ../../app/stylesheets/header.sass */
+/* line 8, ../../app/stylesheets/header.sass */
 header {
   display: block;
   background-color: #80a6d5;
   border-bottom: 1px solid #333333;
   padding: 8px;
 }
-/* line 17, ../../app/stylesheets/header.sass */
+/* line 16, ../../app/stylesheets/header.sass */
 header #forum-name {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -555,7 +555,7 @@ header #forum-name {
 header #forum-name {
   *display: inline;
 }
-/* line 25, ../../app/stylesheets/header.sass */
+/* line 24, ../../app/stylesheets/header.sass */
 header #member-panel {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -563,12 +563,13 @@ header #member-panel {
   -ms-border-radius: 8px;
   -khtml-border-radius: 8px;
   border-radius: 8px;
-  display: block;
   display: -moz-inline-box;
   -moz-box-orient: vertical;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
+  display: inline;
+  float: right;
   background-color: #a2c8f7;
   margin: 8px;
   padding: 8px;
@@ -614,7 +615,7 @@ header #member-panel .links a {
   vertical-align: middle;
   *vertical-align: auto;
   padding: 4px;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 /* line 7, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 header #member-panel .links a {
