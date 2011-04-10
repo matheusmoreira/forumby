@@ -1,4 +1,29 @@
+@import round-block
+
+$dangerous-button-border-radius: 32px
+$dangerous-button-padding: 8px
+$dangerous-button-red: #9f0e0e
+$dangerous-button-white: #fff
+
 @mixin forumby-links($normal, $hover, $active)
   a
     +hover-link
     +link-colors($normal, $hover, $active, $normal, $normal)
+
+  a.dangerous-button
+    +link-colors($dangerous-button-red, $dangerous-button-white)
+    +border-radius($dangerous-button-border-radius)
+    +inline-block
+
+    background-color: $dangerous-button-white
+
+    border: 1px solid $dangerous-button-red
+    padding: $dangerous-button-padding
+
+    font-weight: bold
+    font-size: 1.2em
+
+    &:hover
+      background-color: $dangerous-button-red
+
+      text-decoration: none

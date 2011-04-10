@@ -388,7 +388,7 @@ body .removed {
   background: #990000;
   color: white;
 }
-/* line 2, ../../app/stylesheets/partials/_links.sass */
+/* line 9, ../../app/stylesheets/partials/_links.sass */
 body a {
   text-decoration: none;
   color: #0000cc;
@@ -412,6 +412,39 @@ body a:hover {
 /* line 27, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 body a:active {
   color: #000099;
+}
+/* line 13, ../../app/stylesheets/partials/_links.sass */
+body a.dangerous-button {
+  color: #9f0e0e;
+  -moz-border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -o-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -khtml-border-radius: 32px;
+  border-radius: 32px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  background-color: white;
+  border: 1px solid #9f0e0e;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+/* line 24, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+body a.dangerous-button:hover {
+  color: white;
+}
+/* line 7, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+body a.dangerous-button {
+  *display: inline;
+}
+/* line 26, ../../app/stylesheets/partials/_links.sass */
+body a.dangerous-button:hover {
+  background-color: #9f0e0e;
+  text-decoration: none;
 }
 
 /* line 41, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
@@ -532,14 +565,14 @@ form textarea {
   width: 390px;
   height: 250px;
 }
-/* line 7, ../../app/stylesheets/partials/_form.sass */
+/* line 9, ../../app/stylesheets/partials/_form.sass */
 form input {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
   -o-box-shadow: #333333 1px 1px 5px 0;
   box-shadow: #333333 1px 1px 5px 0;
 }
-/* line 10, ../../app/stylesheets/partials/_form.sass */
+/* line 12, ../../app/stylesheets/partials/_form.sass */
 form input[type=submit] {
   -moz-border-radius: 32px;
   -webkit-border-radius: 32px;
@@ -549,9 +582,10 @@ form input[type=submit] {
   border-radius: 32px;
   background-color: #80a6d5;
   font-size: 1.2em;
+  font-weight: bold;
   color: white;
   border: none;
-  padding: 8px;
+  padding: 12px;
 }
 
 /* line 8, ../../app/stylesheets/header.sass */
