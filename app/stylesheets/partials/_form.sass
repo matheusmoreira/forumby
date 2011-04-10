@@ -1,2 +1,19 @@
+$submit-background-color: #80a6d5
+$submit-text-color: #fff
+
 form
   +blueprint-form
+
+  input
+    +box-shadow
+
+  input[type=submit]
+    +border-radius(32px)
+
+    background-color: $submit-background-color
+
+    font-size: 1.2em
+    color: $submit-text-color
+
+    border: none
+    padding: 8px

@@ -532,6 +532,27 @@ form textarea {
   width: 390px;
   height: 250px;
 }
+/* line 7, ../../app/stylesheets/partials/_form.sass */
+form input {
+  -moz-box-shadow: #333333 1px 1px 5px 0;
+  -webkit-box-shadow: #333333 1px 1px 5px 0;
+  -o-box-shadow: #333333 1px 1px 5px 0;
+  box-shadow: #333333 1px 1px 5px 0;
+}
+/* line 10, ../../app/stylesheets/partials/_form.sass */
+form input[type=submit] {
+  -moz-border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -o-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -khtml-border-radius: 32px;
+  border-radius: 32px;
+  background-color: #80a6d5;
+  font-size: 1.2em;
+  color: white;
+  border: none;
+  padding: 8px;
+}
 
 /* line 8, ../../app/stylesheets/header.sass */
 header {
