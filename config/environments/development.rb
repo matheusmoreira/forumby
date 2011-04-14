@@ -29,5 +29,6 @@ Forumby::Application.configure do
 
   # Send mail to /tmp/mails.
   ActionMailer::Base.delivery_method = :file
+
 end
 

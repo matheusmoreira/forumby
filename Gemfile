@@ -25,3 +25,10 @@ group :development do
   # Compass CSS statistics
   gem 'css_parser'
 end
+
+group :development, :test do
+
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'shoulda'
+end
