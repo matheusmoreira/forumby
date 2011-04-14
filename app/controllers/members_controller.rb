@@ -2,7 +2,7 @@ class MembersController < ApplicationController
 
   respond_to :html
 
-  expose(:members)         { Member.all.paginate page: params[:page] }
+  expose(:members)         { Member.all }
   expose(:members_in_page) { members.paginate page: params[:page] }
   expose(:member)
 
@@ -13,4 +13,5 @@ class MembersController < ApplicationController
   def show
     respond_with member
   end
+
 end

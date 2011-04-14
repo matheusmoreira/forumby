@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20110408224312) do
     t.integer  "failed_attempts",                     :default => 0
     t.string   "unlock_token"
     t.datetime "locked_at"
-    t.string   "name",                                                   :null => false
+    t.string   "name",                                :default => "",    :null => false
     t.boolean  "moderator",                           :default => false, :null => false
     t.boolean  "administrator",                       :default => false, :null => false
     t.boolean  "banned",                              :default => false, :null => false
