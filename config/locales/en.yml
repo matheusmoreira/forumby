@@ -15,3 +15,16 @@ en:
       heading: 'All Members'
     show:
       heading: 'Showing Member'
+  categories:
+    index:
+      heading: 'All Categories'
+    show:
+      heading: 'Showing Category'
+    new:
+      heading: 'New Category'
+      form:
+        submit: 'Create Category'
+    edit:
+      heading: 'Edit Category'
+      form:
+        submit: 'Update Category'

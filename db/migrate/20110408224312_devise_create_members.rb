@@ -10,7 +10,7 @@ class DeviseCreateMembers < ActiveRecord::Migration
       t.trackable
       t.lockable
       # Member columns
-      t.string  :name,           :null => false, :default => ""
+      t.string  :name,           :null => false, :default => ''
       t.boolean :moderator,      :null => false, :default => false
       t.boolean :administrator,  :null => false, :default => false
       t.boolean :banned,         :null => false, :default => false

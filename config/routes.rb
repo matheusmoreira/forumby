@@ -6,4 +6,6 @@ Forumby::Application.routes.draw do
 
   resources :members, :only => [ :index, :show ]
 
+  resources :categories
+
 end
