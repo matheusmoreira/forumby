@@ -565,14 +565,14 @@ form textarea {
   width: 390px;
   height: 250px;
 }
-/* line 15, ../../app/stylesheets/partials/_form.sass */
+/* line 10, ../../app/stylesheets/partials/_form.sass */
 form input {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
   -o-box-shadow: #333333 1px 1px 5px 0;
   box-shadow: #333333 1px 1px 5px 0;
 }
-/* line 18, ../../app/stylesheets/partials/_form.sass */
+/* line 13, ../../app/stylesheets/partials/_form.sass */
 form input[type=submit] {
   -moz-border-radius: 32px;
   -webkit-border-radius: 32px;

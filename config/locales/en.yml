@@ -1,8 +1,12 @@
+# English
+
 en:
+
   forumby:
     forum_title: 'Forumby'
     forum_name: 'Forumby'
     copyright: 'Powered by Forumby'
+
   header:
     member:
       logout: 'Logout'
@@ -10,11 +14,13 @@ en:
       register: 'Register'
       edit_profile: 'Edit profile'
       not_logged_in: 'Not logged in'
+
   members:
     index:
       heading: 'All Members'
     show:
       heading: 'Showing Member'
+
   categories:
     index:
       heading: 'All Categories'
@@ -28,3 +34,12 @@ en:
       heading: 'Edit Category'
       form:
         submit: 'Update Category'
+
+  activerecord:
+    models:
+      category: 'Category'
+
+    attributes:
+      category:
+        name: 'Name'
+        description: 'Description'
