@@ -1,5 +1,7 @@
 class CategoriesController < ApplicationController
 
+  before_filter :authenticate_member!, :except => [ :index, :show ]
+
   respond_to :html
 
   expose(:categories)         { Category.all }
