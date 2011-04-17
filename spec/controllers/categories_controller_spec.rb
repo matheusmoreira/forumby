@@ -2,38 +2,112 @@ require 'spec_helper'
 
 describe CategoriesController do
 
-  describe 'GET index' do
+  let(:category_id) { Factory(:category).id }
 
-    it 'should be successful' do
-      get 'index'
-      response.should be_success
+  context 'with regular members' do
+
+    before :each do
+      sign_in Factory.build(:member)
+    end
+
+    describe 'GET index' do
+      it 'should be successful' do
+        get 'index'
+        response.should be_success
+      end
+    end
+
+    describe 'GET show' do
+      it 'should be successful' do
+        get 'show', :id => category_id
+        response.should be_success
+      end
+    end
+
+    describe 'GET new' do
+      it 'should not be successful' do
+        get 'new'
+        response.should_not be_success
+      end
+    end
+
+    describe 'GET edit' do
+      it 'should not be successful' do
+        get 'edit', :id => category_id
+        response.should_not be_success
+      end
     end
 
   end
 
-  describe 'GET show' do
+  context 'with moderator' do
 
-    it 'should be successful' do
-      get 'show', :id => Factory(:category).id
-      response.should be_success
+    before :each do
+      sign_in Factory.build(:moderator)
+    end
+
+    describe 'GET index' do
+      it 'should be successful' do
+        get 'index'
+        response.should be_success
+      end
+    end
+
+    describe 'GET show' do
+      it 'should be successful' do
+        get 'show', :id => category_id
+        response.should be_success
+      end
+    end
+
+    describe 'GET new' do
+      it 'should not be successful' do
+        get 'new'
+        response.should_not be_success
+      end
+    end
+
+    describe 'GET edit' do
+      it 'should not be successful' do
+        get 'edit', :id => category_id
+        response.should_not be_success
+      end
     end
 
   end
 
-  describe 'GET new' do
+  context 'with administrator' do
 
-    it 'should be successful' do
-      get 'new'
-      response.should be_success
+    before :each do
+      sign_in Factory.build(:administrator)
     end
 
-  end
+    describe 'GET index' do
+      it 'should be successful' do
+        get 'index'
+        response.should be_success
+      end
+    end
 
-  describe 'GET edit' do
+    describe 'GET show' do
+      it 'should be successful' do
+        get 'show', :id => category_id
+        response.should be_success
+      end
+    end
 
-    it 'should be successful' do
-      get 'edit', :id => Factory(:category).id
-      response.should be_success
+    describe 'GET new' do
+      it 'should be successful' do
+        get 'new'
+        response.should be_success
+      end
+    end
+
+    describe 'GET edit' do
+      it 'should be successful' do
+        get 'edit', :id => category_id
+        response.should be_success
+      end
     end
 
   end

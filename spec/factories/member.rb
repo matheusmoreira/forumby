@@ -6,3 +6,15 @@ Factory.define :member do |f|
   f.password_confirmation 'test member'
 
 end
+
+Factory.define :administrator, :parent => :member do |f|
+
+  f.administrator true
+
+end
+
+Factory.define :moderator, :parent => :member do |f|
+
+  f.moderator true
+
+end
