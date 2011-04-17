@@ -8,6 +8,8 @@ class CategoriesController < ApplicationController
   expose(:categories_in_page) { categories.paginate :page => params[:page] }
   expose(:category)
 
+  authorize_resource
+
   # GET /categories
   def index
     respond_with categories
