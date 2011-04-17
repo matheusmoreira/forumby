@@ -566,7 +566,7 @@ form textarea {
   height: 250px;
 }
 /* line 10, ../../app/stylesheets/partials/_form.sass */
-form input {
+form input, form textarea {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
   -o-box-shadow: #333333 1px 1px 5px 0;
