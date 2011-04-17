@@ -1,6 +1,6 @@
-class Category < ActiveRecord::Base
+class Forum < ActiveRecord::Base
 
-  has_many :forums
+  belongs_to :category
 
   validates_presence_of :name
 
@@ -8,7 +8,7 @@ class Category < ActiveRecord::Base
   validates_length_of :description, :maximum => 1000
 
   def self.per_page
-    10
+    30
   end
 
 end
