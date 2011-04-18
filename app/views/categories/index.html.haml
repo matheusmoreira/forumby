@@ -1,4 +1,4 @@
 %section#category-index
   %h1= t 'categories.index.heading'
-  = render :partial => 'category_list', :collection => categories_in_page, :as => :category_in_list
+  = render :partial => 'list', :collection => categories_in_page, :as => :category_in_list
   %nav= will_paginate categories_in_page

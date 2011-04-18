@@ -35,6 +35,25 @@ en:
       form:
         submit: 'Update Category'
 
+    forums:
+      index:
+        heading: 'Forums in %{category}'
+      new:
+        heading: 'New Forum in %{category}'
+
+  forums:
+    index:
+      heading: 'All Forums'
+    show:
+      heading: 'Showing Forum'
+    new:
+      form:
+        submit: 'Create Forum'
+    edit:
+      heading: 'Edit Forum'
+      form:
+        submit: 'Update Forum'
+
   activerecord:
     models:
       category: 'Category'
