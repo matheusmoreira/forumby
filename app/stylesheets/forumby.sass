@@ -1,7 +1,33 @@
 @import partials/block
+@import partials/round-block
+
+$forumby-margin: 16px
+$forumby-padding: 16px
+
+$category-margin: 8px
+$category-padding: 8px
+$category-background-color: #edeceb
+
+$forum-padding: 8px
+$forum-background-color: #80a6d5 + #111
 
 #forumby
   +block
 
   margin: 16px
   padding: 16px
+
+.category
+  +round-block
+
+  margin: $category-margin
+  padding: $category-padding
+
+  background-color: $category-background-color
+
+.forum
+  +round-block
+
+  padding: $forum-padding
+
+  background-color: $forum-background-color

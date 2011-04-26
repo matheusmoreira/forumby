@@ -1,3 +1,6 @@
-@mixin round-block($border-radius)
+@import block
+@import compass/css3/border-radius
+
+@mixin round-block($border-radius: $default-border-radius)
   +border-radius($border-radius)
-  display: block
+  +block
