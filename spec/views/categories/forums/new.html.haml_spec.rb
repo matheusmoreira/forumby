@@ -2,9 +2,10 @@ require 'spec_helper'
 
 describe 'categories/forums/new.html.haml' do
 
+  let(:category) { Factory(:category) }
+  let(:forum) { Forum.new }
+
   before :each do
-    category = Factory(:category)
-    forum = Forum.new
     view.should_receive(:category).any_number_of_times.and_return(category)
     view.should_receive(:forum).any_number_of_times.and_return(forum)
     render
