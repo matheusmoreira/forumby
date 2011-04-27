@@ -12,7 +12,7 @@ class Member < ActiveRecord::Base
   # Devise already validates presence of email and password
   validates_presence_of :name
 
-  validates_format_of :name, :with => /^[\d\w\s]+$/
+  validates_format_of :name, :with => /^[\d\w]+$/
 
   # Devise already validates uniqueness of email
   validates_uniqueness_of :name
