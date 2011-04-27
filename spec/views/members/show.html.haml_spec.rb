@@ -17,11 +17,12 @@ describe 'members/show.html.haml' do
     assert_select 'h1', t('members.show.heading')
   end
 
-  it "should show the member's public profile" do
-    assert_select 'section.member' do |members|
-      members.count.should == 1
-      assert_select members.first, 'h2', member.name
-    end
+  it 'should have a section for the member' do
+    assert_select 'section.member'
+  end
+
+  it "should show the member's name" do
+    assert_select 'h2', member.name
   end
 
 end

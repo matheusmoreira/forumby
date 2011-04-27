@@ -17,15 +17,16 @@ describe 'categories/index.html.haml' do
     assert_select 'h1', t('categories.index.heading')
   end
 
-  it 'should have navigation controls' do
-    assert_select 'nav'
+  it 'should have a section for the category' do
+    assert_select 'section.category'
   end
 
-  it 'should include the category in the index' do
-      assert_select 'section.category' do |categories|
-        categories.count.should == 1
-        assert_select categories.first, 'h2', category.name
-    end
+  it "should show the category's name in the index" do
+    assert_select 'h2', category.name
+  end
+
+  it 'should have navigation controls' do
+    assert_select 'nav'
   end
 
 end

@@ -18,10 +18,15 @@ describe 'forums/edit.html.haml' do
   end
 
   it 'should display an edit forum form' do
-    assert_select 'form.edit_forum' do
-      assert_select 'input#forum_name[value=?]', forum.name
-      assert_select 'textarea#forum_description', forum.description
-    end
+    assert_select 'form.edit_forum'
+  end
+
+  it "should have a category name text field prefilled with the forum's name" do
+    assert_select 'input#forum_name[value=?]', forum.name
+  end
+
+  it "should have a category name text area prefilled with the forum's description" do
+    assert_select 'textarea#forum_description', forum.description
   end
 
 end

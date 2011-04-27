@@ -1,9 +1,9 @@
 Factory.define :member do |f|
 
-  f.name 'test member'
-  f.email 'test_member@forumby.net'
+  f.sequence(:name) { |n| "test_member_#{n}" }
+  f.email { |member| "#{member.name}@forumby.net" }
   f.password 'test member'
-  f.password_confirmation 'test member'
+  f.password_confirmation { |member| member.password }
 
 end
 

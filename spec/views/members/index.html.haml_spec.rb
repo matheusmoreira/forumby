@@ -17,15 +17,16 @@ describe 'members/index.html.haml' do
     assert_select 'h1', t('members.index.heading')
   end
 
-  it 'should have navigation controls' do
-    assert_select 'nav'
+  it 'should have a section for the member' do
+    assert_select 'section.member'
   end
 
   it 'should include the member in the index' do
-      assert_select 'section.member' do |members|
-        members.count.should == 1
-        assert_select members.first, 'h2', member.name
-    end
+    assert_select 'h2', member.name
+  end
+
+  it 'should have navigation controls' do
+    assert_select 'nav'
   end
 
 end

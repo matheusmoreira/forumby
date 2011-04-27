@@ -17,12 +17,16 @@ describe 'forums/show.html.haml' do
     assert_select 'h1', t('forums.show.heading')
   end
 
-  it "should show the forum's attributes" do
-    assert_select 'section.forum' do |forums|
-      forums.count.should == 1
-      assert_select forums.first, 'h2', forum.name
-      assert_select forums.first, 'p', forum.description
-    end
+  it 'should have a section for the forum' do
+    assert_select 'section.forum'
+  end
+
+  it "should show the forum's name" do
+    assert_select 'h2', forum.name
+  end
+
+  it "should show the forum's description" do
+    assert_select 'p', forum.description
   end
 
 end

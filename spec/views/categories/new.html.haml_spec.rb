@@ -18,10 +18,15 @@ describe 'categories/new.html.haml' do
   end
 
   it 'should display a new category form' do
-    assert_select 'form.new_category' do
-      assert_select 'input#category_name[value=?]', ''
-      assert_select 'textarea#category_description', ''
-    end
+    assert_select 'form.new_category'
+  end
+
+  it 'should have an empty category name text field' do
+    assert_select 'input#category_name[value=?]', ''
+  end
+
+  it 'should have an empty category description text area' do
+    assert_select 'textarea#category_description', ''
   end
 
 end

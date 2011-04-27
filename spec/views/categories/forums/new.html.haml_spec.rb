@@ -19,11 +19,16 @@ describe 'categories/forums/new.html.haml' do
     assert_select 'h1', t('categories.forums.new.heading')
   end
 
-  it 'should display a new category form' do
-    assert_select 'form.new_forum' do
-      assert_select 'input#forum_name[value=?]', ''
-      assert_select 'textarea#forum_description', ''
-    end
+  it 'should have a new forum form' do
+    assert_select 'form.new_forum'
+  end
+
+  it 'should have an empty forum name text field' do
+    assert_select 'input#forum_name[value=?]', ''
+  end
+
+  it 'should have an empty forum description text area' do
+    assert_select 'textarea#forum_description', ''
   end
 
 end
