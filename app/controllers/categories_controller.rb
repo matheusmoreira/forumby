@@ -7,6 +7,7 @@ class CategoriesController < ApplicationController
   expose(:categories)         { Category.all }
   expose(:categories_in_page) { categories.paginate :page => params[:page] }
   expose(:category)
+  expose(:forums)             { category.forums }
 
   authorize_resource
 

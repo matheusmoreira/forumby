@@ -8,8 +8,13 @@ $category-margin: 8px
 $category-padding: 8px
 $category-background-color: #edeceb
 
+$category-forums-padding: 4px
+
 $forum-padding: 8px
+$forum-margin: 8px
 $forum-background-color: #80a6d5 + #111
+$forum-text-color: #f0f0f0
+$forum-header-color: #fff
 
 #forumby
   +block
@@ -25,9 +30,22 @@ $forum-background-color: #80a6d5 + #111
 
   background-color: $category-background-color
 
+  .category-forums
+    +block
+
+    padding: $category-forums-padding
+
 .forum
   +round-block
 
+  margin: $forum-margin
   padding: $forum-padding
 
+  color: $forum-text-color
+
   background-color: $forum-background-color
+
+  h2
+    margin: 0px
+
+    color: $forum-header-color

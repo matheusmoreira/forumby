@@ -1,11 +1,11 @@
-/* line 14, ../../app/stylesheets/forumby.sass */
+/* line 19, ../../app/stylesheets/forumby.sass */
 #forumby {
   display: block;
   margin: 16px;
   padding: 16px;
 }
 
-/* line 20, ../../app/stylesheets/forumby.sass */
+/* line 25, ../../app/stylesheets/forumby.sass */
 .category {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -18,8 +18,13 @@
   padding: 8px;
   background-color: #edeceb;
 }
+/* line 33, ../../app/stylesheets/forumby.sass */
+.category .category-forums {
+  display: block;
+  padding: 4px;
+}
 
-/* line 28, ../../app/stylesheets/forumby.sass */
+/* line 38, ../../app/stylesheets/forumby.sass */
 .forum {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -28,6 +33,13 @@
   -khtml-border-radius: 5px;
   border-radius: 5px;
   display: block;
+  margin: 8px;
   padding: 8px;
+  color: #f0f0f0;
   background-color: #91b7e6;
+}
+/* line 48, ../../app/stylesheets/forumby.sass */
+.forum h2 {
+  margin: 0px;
+  color: white;
 }

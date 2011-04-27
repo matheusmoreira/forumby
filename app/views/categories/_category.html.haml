@@ -1,3 +1,5 @@
 %section[category]
   %h2= category.name
   %p= category.description
+  .category-forums
+    = render :partial => 'forums/list', :collection => forums, :as => :forum_in_list
