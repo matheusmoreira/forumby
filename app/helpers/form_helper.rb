@@ -1,4 +1,3 @@
-
 module FormHelper
 
   def render_edit_form_for(*args)
@@ -12,8 +11,9 @@ module FormHelper
   private
 
   def render_form(verb, resource, partial = 'form')
+    verb, resource = verb.to_s, resource.to_s.pluralize
     render :partial => partial,
-           :locals  => { :submit => t("#{resource.to_s.pluralize}.#{verb.to_s}.form.submit") }
+           :locals  => { :submit => t("#{resource}.#{verb}.form.submit") }
   end
 
 end

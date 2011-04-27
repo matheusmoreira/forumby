@@ -16,7 +16,7 @@ describe 'categories/forums/new.html.haml' do
   end
 
   it 'should have the correct title' do
-    assert_select 'h1', t('categories.forums.new.heading')
+    assert_select 'h1', t('categories.forums.new.heading', :category => category.name)
   end
 
   it 'should have a new forum form' do
