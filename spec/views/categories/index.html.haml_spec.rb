@@ -2,8 +2,9 @@ require 'spec_helper'
 
 describe 'categories/index.html.haml' do
 
+  let(:category) { Factory(:category) }
+
   before :each do
-    category = Factory(:category)
     view.should_receive(:categories_in_page).any_number_of_times.and_return([ category ].paginate)
     render
   end
@@ -23,7 +24,7 @@ describe 'categories/index.html.haml' do
   it 'should include the category in the index' do
       assert_select 'section.category' do |categories|
         categories.count.should == 1
-        assert_select categories.first, 'h2', Factory(:category).name
+        assert_select categories.first, 'h2', category.name
     end
   end
 

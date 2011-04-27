@@ -2,8 +2,9 @@ require 'spec_helper'
 
 describe 'categories/new.html.haml' do
 
+  let(:category) { Category.new }
+
   before :each do
-    category = Category.new
     view.should_receive(:category).any_number_of_times.and_return(category)
     render
   end

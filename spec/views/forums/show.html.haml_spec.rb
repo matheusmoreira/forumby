@@ -2,8 +2,9 @@ require 'spec_helper'
 
 describe 'forums/show.html.haml' do
 
+  let(:forum) { Factory(:forum) }
+
   before :each do
-    forum = Factory(:forum)
     view.should_receive(:forum).any_number_of_times.and_return(forum)
     render
   end
@@ -19,8 +20,8 @@ describe 'forums/show.html.haml' do
   it "should show the forum's attributes" do
     assert_select 'section.forum' do |forums|
       forums.count.should == 1
-      assert_select forums.first, 'h2', Factory(:forum).name
-      assert_select forums.first, 'p', Factory(:forum).description
+      assert_select forums.first, 'h2', forum.name
+      assert_select forums.first, 'p', forum.description
     end
   end
 

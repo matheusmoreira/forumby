@@ -2,8 +2,9 @@ require 'spec_helper'
 
 describe 'categories/show.html.haml' do
 
+  let(:category) { Factory(:category) }
+
   before :each do
-    category = Factory(:category)
     view.should_receive(:category).any_number_of_times.and_return(category)
     render
   end
@@ -19,8 +20,8 @@ describe 'categories/show.html.haml' do
   it "should show the category's attributes" do
     assert_select 'section.category' do |categories|
       categories.count.should == 1
-      assert_select categories.first, 'h2', Factory(:category).name
-      assert_select categories.first, 'p', Factory(:category).description
+      assert_select categories.first, 'h2', category.name
+      assert_select categories.first, 'p', category.description
     end
   end
 

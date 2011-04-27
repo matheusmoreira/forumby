@@ -2,8 +2,9 @@ require 'spec_helper'
 
 describe 'members/index.html.haml' do
 
+  let(:member) { Factory(:member) }
+
   before :each do
-    member = Factory(:member)
     view.should_receive(:members_in_page).any_number_of_times.and_return([ member ].paginate)
     render
   end
@@ -23,7 +24,7 @@ describe 'members/index.html.haml' do
   it 'should include the member in the index' do
       assert_select 'section.member' do |members|
         members.count.should == 1
-        assert_select members.first, 'h2', Factory.build(:member).name
+        assert_select members.first, 'h2', member.name
     end
   end
 

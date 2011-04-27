@@ -2,8 +2,9 @@ require 'spec_helper'
 
 describe 'members/show.html.haml' do
 
+  let(:member) { Factory(:member) }
+
   before :each do
-    member = Factory(:member)
     view.should_receive(:member).any_number_of_times.and_return(member)
     render
   end
@@ -19,7 +20,7 @@ describe 'members/show.html.haml' do
   it "should show the member's public profile" do
     assert_select 'section.member' do |members|
       members.count.should == 1
-      assert_select members.first, 'h2', Factory.build(:member).name
+      assert_select members.first, 'h2', member.name
     end
   end
 
