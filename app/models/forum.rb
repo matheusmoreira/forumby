@@ -7,6 +7,10 @@ class Forum < ActiveRecord::Base
   validates_length_of :name, :within => 1..80
   validates_length_of :description, :maximum => 1000
 
+  def self.without_category
+    where :category_id => nil
+  end
+
   def self.per_page
     30
   end

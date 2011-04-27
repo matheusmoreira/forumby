@@ -20,6 +20,17 @@ class ForumsController < ApplicationController
     respond_with forum
   end
 
+  # GET /forums/new
+  def new
+    respond_with forum
+  end
+
+  # POST /forums
+  def create
+    forum.save
+    respond_with forum
+  end
+
   # GET /forums/:id/edit
   def edit
     respond_with forum

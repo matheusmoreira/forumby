@@ -47,6 +47,7 @@ en:
     show:
       heading: 'Showing Forum'
     new:
+      heading: 'New Forum'
       form:
         submit: 'Create Forum'
     edit:

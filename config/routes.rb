@@ -10,6 +10,6 @@ Forumby::Application.routes.draw do
     resources :forums, :module => :categories, :only => [ :index, :new, :create ]
   end
 
-  resources :forums, :except => [ :new, :create ]
+  resources :forums
 
 end

@@ -13,4 +13,9 @@ describe Forum do
 
   it { should_not allow_mass_assignment_of(:id) }
 
+  it 'should find forum without category' do
+    forum_without_category = Factory(:forum_without_category)
+    Forum.without_category.should include forum_without_category
+  end
+
 end
