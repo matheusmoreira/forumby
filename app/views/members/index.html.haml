@@ -1,4 +1,5 @@
 %section#member-index
   %h1= t 'members.index.heading'
-  = render :partial => 'list', :collection => members_in_page
+  = list_for :members, members_in_page
   %nav= will_paginate members_in_page
+

@@ -1,10 +1,10 @@
 module FormHelper
 
-  def render_edit_form_for(*args)
+  def edit_form_for(*args)
     render_form :edit, *args
   end
 
-  def render_new_form_for(*args)
+  def new_form_for(*args)
     render_form :new, *args
   end
 
