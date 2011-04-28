@@ -1,3 +1,5 @@
 %section[forum]
-  %h2= forum.name
+  %h2= link_to forum.name, forum_path(forum)
   %p= forum.description
+  - if forum.has_nested_forums?
+    .nested_forums= nested_forums_for forum

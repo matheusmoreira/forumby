@@ -12,4 +12,24 @@
 
   %br/
 
+  = f.label :category
+  %br/
+  = f.collection_select :category_id,
+                        Category.all,
+                        :id,
+                        :name,
+                        :include_blank => t('forums.form.blank_category')
+
+  %br/
+
+  = f.label :parent_forum
+  %br/
+  = f.collection_select :parent_forum_id,
+                        Forum.all,
+                        :id,
+                        :name,
+                        :include_blank => t('forums.form.blank_parent_forum')
+
+  %br/
+
   = f.submit submit

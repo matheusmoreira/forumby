@@ -7,6 +7,9 @@ en:
     forum_name: 'Forumby'
     copyright: 'Powered by Forumby'
 
+    home:
+      heading: 'Forum Index'
+
   header:
     member:
       logout: 'Logout'
@@ -46,6 +49,9 @@ en:
       heading: 'All Forums'
     show:
       heading: 'Showing Forum'
+    form:
+      blank_category: 'None'
+      blank_parent_forum: 'None'
     new:
       heading: 'New Forum'
       form:
@@ -58,8 +64,15 @@ en:
   activerecord:
     models:
       category: 'Category'
+      forum: 'Forum'
 
     attributes:
       category:
         name: 'Name'
         description: 'Description'
+
+      forum:
+        name: 'Name'
+        description: 'Description'
+        category: 'Category'
+        parent_forum: 'Parent Forum'

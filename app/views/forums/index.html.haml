@@ -1,4 +1,4 @@
 %section#forum-index
   %h1= t 'forums.index.heading'
-  = render :partial => 'list', :collection => forums_in_page, :as => :forum_in_list
+  = render :partial => 'list', :collection => forums_in_page
   %nav= will_paginate forums_in_page
