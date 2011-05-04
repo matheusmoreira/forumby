@@ -10,6 +10,8 @@ Forumby::Application.routes.draw do
     resources :forums, :module => :categories, :only => [ :index, :new, :create ]
   end
 
-  resources :forums
+  resources :forums do
+    resources :nested_forums, :module => :forums, :only => [ :index, :new, :create ]
+  end
 
 end

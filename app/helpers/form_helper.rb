@@ -10,9 +10,13 @@ module FormHelper
 
   private
 
-  def render_form(verb, resource, partial = 'form')
-    verb, resource = verb.to_s, resource.to_s.pluralize
-    render :partial => partial, :locals  => { :submit => t("#{resource}.#{verb}.form.submit") }
+  # render_form(:verb, *resources, options = {})
+  def render_form(*args)
+    verb = args.shift.to_s
+    options = args.extract_options!
+    resources = args.map { |arg| arg.to_s.pluralize }.join '.'
+    render :partial => options.fetch(:partial, 'form'),
+           :locals  => { :submit => t("#{resources}.#{verb}.form.submit") }
   end
 
 end

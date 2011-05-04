@@ -49,9 +49,6 @@ en:
       heading: 'All Forums'
     show:
       heading: 'Showing Forum'
-    form:
-      blank_category: 'None'
-      blank_parent_forum: 'None'
     new:
       heading: 'New Forum'
       form:
@@ -60,6 +57,19 @@ en:
       heading: 'Edit Forum'
       form:
         submit: 'Update Forum'
+    form:
+      blank_category: 'None'
+      blank_parent_forum: 'None'
+
+    nested_forums:
+      index:
+        heading: 'Nested Forums in %{forum}'
+      new:
+        heading: 'New Nested Forum in %{forum}'
+        form:
+          submit: 'Create Nested Forum'
+      form:
+        blank_category: 'None'
 
   activerecord:
     models:
