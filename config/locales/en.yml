@@ -73,6 +73,7 @@ en:
 
   activerecord:
     models:
+      member: 'Member'
       category: 'Category'
       forum: 'Forum'
 
