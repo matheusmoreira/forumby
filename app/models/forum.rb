@@ -1,6 +1,7 @@
 class Forum < ActiveRecord::Base
 
   belongs_to :category
+  has_many :topics
 
   # Forums can be nested
   has_many :nested_forums,

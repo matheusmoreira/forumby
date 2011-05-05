@@ -11,6 +11,7 @@ describe Forum do
   subject { forum }
 
   it { should have_many(:nested_forums) }
+  it { should have_many(:topics) }
 
   it { should belong_to(:category) }
   it { should belong_to(:parent_forum) }
