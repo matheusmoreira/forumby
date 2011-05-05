@@ -19,7 +19,7 @@ class Forum < ActiveRecord::Base
     not nested_forums.empty?
   end
 
-  def is_nested?
+  def nested?
     not parent_forum.nil?
   end
 

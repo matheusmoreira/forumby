@@ -35,7 +35,7 @@ describe Forum do
   end
 
   it 'should not be nested' do
-    forum_without_parent.is_nested?.should be_false
+    forum_without_parent.nested?.should be_false
   end
 
   it 'should have no nested forums' do
@@ -43,7 +43,7 @@ describe Forum do
   end
 
   it 'should be nested' do
-    nested_forum.is_nested?.should be_true
+    nested_forum.nested?.should be_true
   end
 
   it 'should have nested forums' do
