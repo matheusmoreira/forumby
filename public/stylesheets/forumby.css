@@ -1,45 +1,89 @@
-/* line 19, ../../app/stylesheets/forumby.sass */
-#forumby {
-  display: block;
-  margin: 16px;
-  padding: 16px;
-}
+/*
+Syntax error: Undefined variable: "$blueprint-font-size".
+        on line 73 of /home/matheus/projects/forumby/app/stylesheets/forumby.sass
 
-/* line 25, ../../app/stylesheets/forumby.sass */
-.category {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  display: block;
-  margin: 8px;
-  padding: 8px;
-  background-color: #edeceb;
-}
-/* line 33, ../../app/stylesheets/forumby.sass */
-.category .category-forums {
-  display: block;
-  padding: 4px;
-}
+68: $topic-post-header-margin: 0px
+69: $topic-post-header-color: $header-color
+70: 
+71: $post-margin: 8px
+72: $post-padding: 8px
+73: $post-font-size: $blueprint-font-size
+74: $post-text-color: $font-color
+75: $post-background-color: $category-background-color
+76: $post-header-margin: 0px
+77: $post-header-color: $header-color
+78: 
 
-/* line 38, ../../app/stylesheets/forumby.sass */
-.forum {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  display: block;
-  margin: 8px;
-  padding: 8px;
-  color: #f0f0f0;
-  background-color: #91b7e6;
-}
-/* line 48, ../../app/stylesheets/forumby.sass */
-.forum h2 {
-  margin: 0px;
-  color: white;
-}
+Backtrace:
+/home/matheus/projects/forumby/app/stylesheets/forumby.sass:73
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/script/variable.rb:45:in `_perform'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/script/node.rb:40:in `perform'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:236:in `visit_variable'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `map'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/root_node.rb:20:in `render'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/engine.rb:291:in `_render'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/engine.rb:239:in `block in render'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/util.rb:298:in `silence_sass_warnings'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/engine.rb:239:in `render'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `each'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `each'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/plugin.rb:81:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/plugin.rb:54:in `check_for_updates'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/plugin/rack.rb:51:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/warden-1.0.4/lib/warden/manager.rb:35:in `block in call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/warden-1.0.4/lib/warden/manager.rb:34:in `catch'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/warden-1.0.4/lib/warden/manager.rb:34:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `block in call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$blueprint-font-size\".\A         on line 73 of /home/matheus/projects/forumby/app/stylesheets/forumby.sass\A \A 68: $topic-post-header-margin: 0px\A 69: $topic-post-header-color: $header-color\A 70: \A 71: $post-margin: 8px\A 72: $post-padding: 8px\A 73: $post-font-size: $blueprint-font-size\A 74: $post-text-color: $font-color\A 75: $post-background-color: $category-background-color\A 76: $post-header-margin: 0px\A 77: $post-header-color: $header-color\A 78: "; }

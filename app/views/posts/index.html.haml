@@ -1,0 +1,4 @@
+%section#post-index
+  %h1= t 'posts.index.heading'
+  = list_for :posts, posts_in_page
+  %nav= will_paginate posts_in_page

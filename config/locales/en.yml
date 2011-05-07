@@ -71,6 +71,42 @@ en:
       form:
         blank_category: 'None'
 
+    topics:
+      index:
+        heading: 'Topics in %{forum}'
+      new:
+        heading: 'New Topic'
+        form:
+          submit: 'Create Topic'
+
+  topics:
+    index:
+      heading: 'All Topics'
+    show:
+      heading: 'Showing Topic'
+    edit:
+      heading: 'Edit Topic'
+      form:
+        submit: 'Update Topic'
+
+    posts:
+      index:
+        heading: 'All Posts in %{topic}'
+      new:
+        heading: 'New Post'
+        form:
+          submit: 'Create Post'
+
+  posts:
+    index:
+      heading: 'All Posts'
+    show:
+      heading: 'Showing Post'
+    edit:
+      heading: 'Edit Post'
+      form:
+        submit: 'Update Post'
+
   activerecord:
     models:
       member: 'Member'

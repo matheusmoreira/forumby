@@ -1,0 +1,9 @@
+= form_for post, :url => { :controller => 'topics/posts', :action => :create } do |f|
+
+  = f.label :content
+  %br/
+  = f.text_area :content
+
+  %br/
+
+  = f.submit submit

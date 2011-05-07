@@ -1,7 +1,7 @@
 class Forum < ActiveRecord::Base
 
   belongs_to :category
-  has_many :topics
+  has_many :topics, :dependent => :destroy
 
   # Forums can be nested
   has_many :nested_forums,
@@ -16,8 +16,16 @@ class Forum < ActiveRecord::Base
   validates_length_of :name, :within => 1..80
   validates_length_of :description, :maximum => 1000
 
+  def has_category?
+    not category.nil?
+  end
+
   def has_nested_forums?
     not nested_forums.empty?
+  end
+
+  def has_topics?
+    not topics.empty?
   end
 
   def nested?

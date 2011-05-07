@@ -1,6 +1,6 @@
 class Category < ActiveRecord::Base
 
-  has_many :forums
+  has_many :forums, :dependent => :nullify
 
   validates_presence_of :name
 

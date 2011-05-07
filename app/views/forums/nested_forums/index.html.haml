@@ -1,4 +1,4 @@
-%section#nested-forum-index
+%section#forum-nested-forum-index
   %h1= t 'forums.nested_forums.index.heading', :forum => forum.name
   = list_for :forums, nested_forums_in_page
   %nav= will_paginate nested_forums_in_page

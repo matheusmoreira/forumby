@@ -1,0 +1,4 @@
+%section#forum-topic-index
+  %h1= t 'forums.topics.index.heading', :forum => forum.name
+  = list_for :topics, topics_in_page
+  %nav= will_paginate topics_in_page

@@ -1,4 +1,4 @@
 %section#forumby-home
   %h1= t 'forumby.home.heading'
-  = render :partial => 'categories/category', :collection => categories
-  = render :partial => 'forums/forum', :collection => top_level_forums
+  = list_for :categories, categories, :category
+  = list_for :forums, top_level_forums

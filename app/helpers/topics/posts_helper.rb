@@ -1,0 +1,2 @@
+module Topics::PostsHelper
+end

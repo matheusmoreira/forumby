@@ -1,0 +1,11 @@
+= form_for topic do |f|
+
+  = f.label :title
+  %br/
+  = f.text_field :title
+
+  /(Rich?) Text area for topic content here, parse with Markdown
+
+  %br/
+
+  = f.submit submit

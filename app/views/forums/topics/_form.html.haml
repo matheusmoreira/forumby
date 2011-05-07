@@ -1,0 +1,17 @@
+= form_for topic, :url => { :controller => 'forums/topics', :action => :create } do |topic_form|
+
+  = topic_form.label :title
+  %br/
+  = topic_form.text_field :title
+
+  %br/
+
+  - topic_form.fields_for :posts, topic.posts.build do |post_fields|
+
+    = post_fields.label :content
+    %br/
+    = post_fields.text_area :content
+
+  %br/
+
+  = topic_form.submit submit

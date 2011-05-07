@@ -1,0 +1,4 @@
+%section#topic-post-index
+  %h1= t 'topics.posts.index.heading', :topic => topic.title
+  = list_for :posts, posts_in_page
+  %nav= will_paginate posts_in_page
