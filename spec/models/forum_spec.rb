@@ -2,13 +2,15 @@ require 'spec_helper'
 
 describe Forum do
 
-  let(:forum) { Factory(:forum) }
+  let(:forum)                  { Factory(:forum) }
+  let(:topic)                  { Factory(:topic) }
   let(:forum_without_category) { Factory(:forum_without_category) }
-  let(:forum_without_parent) { Factory(:forum_without_parent) }
-  let(:top_level_forum) { Factory(:top_level_forum) }
-  let(:parent_forum) { forum }
-  let(:nested_forum) { Factory(:forum, :name => 'Nested Forum', :parent_forum => parent_forum) }
-  subject { forum }
+  let(:forum_with_category)    { Factory(:forum_with_category) }
+  let(:forum_without_parent)   { Factory(:forum_without_parent) }
+  let(:forum_with_parent)      { Factory(:forum_with_parent) }
+  let(:top_level_forum)        { Factory(:top_level_forum) }
+
+  subject                      { forum }
 
   it { should have_many(:nested_forums) }
   it { should have_many(:topics) }
@@ -35,21 +37,38 @@ describe Forum do
     Forum.top_level.should include top_level_forum
   end
 
-  it 'should not be nested' do
-    forum_without_parent.nested?.should be_false
+  it 'should not have a category' do
+    forum_without_category.has_category?.should be_false
+  end
+
+  it 'should have a category' do
+    forum_with_category.has_category?.should be_true
   end
 
   it 'should have no nested forums' do
     forum.has_nested_forums?.should be_false
   end
 
-  it 'should be nested' do
-    nested_forum.nested?.should be_true
+  it 'should have nested forums' do
+    forum.stub!(:nested_forums).and_return [ forum_with_parent ]
+    forum.has_nested_forums?.should be_true
   end
 
-  it 'should have nested forums' do
-    parent_forum.stub!(:nested_forums).and_return [ nested_forum ]
-    parent_forum.has_nested_forums?.should be_true
+  it 'should have no topics' do
+    forum.has_topics?.should be_false
+  end
+
+  it 'should have topics' do
+    forum.stub!(:topics).and_return [ topic ]
+    forum.has_topics?.should be_true
+  end
+
+  it 'should not be nested' do
+    forum_without_parent.nested?.should be_false
+  end
+
+  it 'should be nested' do
+    forum_with_parent.nested?.should be_true
   end
 
 end
