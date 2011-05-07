@@ -37,6 +37,9 @@ module Forumby
     # :jquery expansion for jQuery JavaScript files.
     config.action_view.javascript_expansions[:jquery] = %w(jquery.min jquery-ui.min)
 
+    # :jquery_ui expansion for Forumby's jQuery UI theme.
+    config.action_view.stylesheet_expansions[:jquery_ui] = %w(jquery-ui-forumby)
+
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
