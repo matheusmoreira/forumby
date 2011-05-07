@@ -11,6 +11,9 @@ gem 'cancan'
 # Pagination
 gem 'will_paginate', '3.0.pre2'
 
+# JavaScript frameworks and libraries
+gem 'jquery-rails'
+
 # Other Gems
 gem 'compass'
 gem 'haml'
