@@ -1,11 +1,13 @@
 @import blueprint/scaffolding
-@import links
+@import link
 
 body
   +blueprint-typography(true)
   +blueprint-utilities
   +blueprint-debug
   +blueprint-interaction
-  +forumby-links(#00c, #03f, #009)
+
+  a
+    +link
 
 +blueprint-scaffolding('body')

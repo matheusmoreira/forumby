@@ -376,7 +376,7 @@ body .removed {
   background: #990000;
   color: white;
 }
-/* line 9, ../../app/stylesheets/partials/_links.sass */
+/* line 10, ../../app/stylesheets/partials/_body.sass */
 body a {
   text-decoration: none;
   color: #0000cc;
@@ -400,39 +400,6 @@ body a:hover {
 /* line 27, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body a:active {
   color: #000099;
-}
-/* line 13, ../../app/stylesheets/partials/_links.sass */
-body a.dangerous-button {
-  color: #9f0e0e;
-  -moz-border-radius: 32px;
-  -webkit-border-radius: 32px;
-  -o-border-radius: 32px;
-  -ms-border-radius: 32px;
-  -khtml-border-radius: 32px;
-  border-radius: 32px;
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  background-color: white;
-  border: 1px solid #9f0e0e;
-  padding: 8px;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-/* line 24, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-body a.dangerous-button:hover {
-  color: white;
-}
-/* line 7, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-body a.dangerous-button {
-  *display: inline;
-}
-/* line 26, ../../app/stylesheets/partials/_links.sass */
-body a.dangerous-button:hover {
-  background-color: #9f0e0e;
-  text-decoration: none;
 }
 
 /* line 39, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
