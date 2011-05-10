@@ -22,4 +22,11 @@ RSpec.configure do |config|
     sign_in Factory(:administrator)
   end
 
+  def sign_out_member
+    sign_out :member
+  end
+
+  alias :sign_out_moderator     :sign_out_member
+  alias :sign_out_administrator :sign_out_member
+
 end

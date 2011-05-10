@@ -13,6 +13,10 @@ describe Topics::PostsController do
       sign_in_member
     end
 
+    after :each do
+      sign_out_member
+    end
+
     describe 'GET index' do
       it 'should be successful' do
         get 'index', :topic_id => topic_id
@@ -35,6 +39,10 @@ describe Topics::PostsController do
       sign_in_moderator
     end
 
+    after :each do
+      sign_out_moderator
+    end
+
     describe 'GET index' do
       it 'should be successful' do
         get 'index', :topic_id => topic_id
@@ -55,6 +63,10 @@ describe Topics::PostsController do
 
     before :each do
       sign_in_administrator
+    end
+
+    after :each do
+      sign_out_administrator
     end
 
     describe 'GET index' do

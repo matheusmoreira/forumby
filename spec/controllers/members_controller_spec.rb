@@ -8,6 +8,10 @@ describe MembersController do
       sign_in_member
     end
 
+    after :each do
+      sign_out_member
+    end
+
     describe 'GET index' do
       it 'should be successful' do
         get 'index'

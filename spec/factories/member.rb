@@ -4,6 +4,7 @@ Factory.define :member do |f|
   f.email { |member| "#{member.name}@forumby.net" }
   f.password 'test member'
   f.password_confirmation { |member| member.password }
+  f.confirmed_at { Time.now }
 
 end
 
