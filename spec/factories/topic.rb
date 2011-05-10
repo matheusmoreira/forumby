@@ -1,6 +1,6 @@
 Factory.define :topic do |f|
 
-  f.association :forum
-  f.title 'Test Topic'
+  f.forum { |topic| topic.association :forum }
+  f.sequence(:title) { |n| "Test Topic ##{n}" }
 
 end

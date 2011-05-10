@@ -8,7 +8,7 @@ describe PostsController do
   context 'with regular members' do
 
     before :each do
-      sign_in Factory.build(:member)
+      sign_in_member
     end
 
     describe 'GET index' do
@@ -37,7 +37,7 @@ describe PostsController do
   context 'with moderator' do
 
     before :each do
-      sign_in Factory.build(:moderator)
+      sign_in_moderator
     end
 
     describe 'GET index' do
@@ -66,7 +66,7 @@ describe PostsController do
   context 'with administrator' do
 
     before :each do
-      sign_in Factory.build(:administrator)
+      sign_in_administrator
     end
 
     describe 'GET index' do

@@ -32,6 +32,10 @@ class Forum < ActiveRecord::Base
     not parent_forum.nil?
   end
 
+  def has_description?
+    not description.blank?
+  end
+
   def self.without_category
     where :category_id => nil
   end

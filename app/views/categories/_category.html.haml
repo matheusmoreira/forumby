@@ -1,4 +1,6 @@
 %section[category]
   %h2= link_to category.name, category_path(category)
-  %p= category.description
-  .forums= forums_in category
+  - if category.has_description?
+    %p= category.description
+  - if category.has_forums?
+    .forums= forums_in category

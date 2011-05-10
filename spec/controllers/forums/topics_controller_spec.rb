@@ -2,14 +2,15 @@ require 'spec_helper'
 
 describe Forums::TopicsController do
 
-  let(:forum)        { Factory(:forum) }
-  let(:forum_id)     { forum.id }
-  let(:topic)        { Factory(:topic, :forum => forum) }
+  let(:topic)    { Factory(:topic) }
+  let(:forum)    { topic.forum }
+  let(:topic_id) { topic.id }
+  let(:forum_id) { forum.id }
 
   context 'with regular members' do
 
     before :each do
-      sign_in Factory.build(:member)
+      sign_in_member
     end
 
     describe 'GET index' do
@@ -31,7 +32,7 @@ describe Forums::TopicsController do
   context 'with moderator' do
 
     before :each do
-      sign_in Factory.build(:moderator)
+      sign_in_moderator
     end
 
     describe 'GET index' do
@@ -53,7 +54,7 @@ describe Forums::TopicsController do
   context 'with administrator' do
 
     before :each do
-      sign_in Factory.build(:administrator)
+      sign_in_administrator
     end
 
     describe 'GET index' do

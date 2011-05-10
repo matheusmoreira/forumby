@@ -2,26 +2,27 @@ require 'spec_helper'
 
 describe Forums::NestedForumsController do
 
-  let(:forum)        { Factory(:forum) }
-  let(:forum_id)     { forum.id }
-  let(:nested_forum) { Factory(:forum, :name => 'Nested Forum', :parent_forum => forum) }
+  let(:nested_forum)    { Factory(:forum_with_parent) }
+  let(:parent_forum)    { nested_forum.parent_forum }
+  let(:nested_forum_id) { nested_forum.id }
+  let(:parent_forum_id) { parent_forum.id }
 
   context 'with regular members' do
 
     before :each do
-      sign_in Factory.build(:member)
+      sign_in_member
     end
 
     describe 'GET index' do
       it 'should be successful' do
-        get 'index', :forum_id => forum_id
+        get 'index', :forum_id => parent_forum_id
         response.should be_success
       end
     end
 
     describe 'GET new' do
       it 'should not be successful' do
-        get 'new', :forum_id => forum_id
+        get 'new', :forum_id => parent_forum_id
         response.should_not be_success
       end
     end
@@ -31,19 +32,19 @@ describe Forums::NestedForumsController do
   context 'with moderator' do
 
     before :each do
-      sign_in Factory.build(:moderator)
+      sign_in_moderator
     end
 
     describe 'GET index' do
       it 'should be successful' do
-        get 'index', :forum_id => forum_id
+        get 'index', :forum_id => parent_forum_id
         response.should be_success
       end
     end
 
     describe 'GET new' do
       it 'should not be successful' do
-        get 'new', :forum_id => forum_id
+        get 'new', :forum_id => parent_forum_id
         response.should_not be_success
       end
     end
@@ -53,19 +54,19 @@ describe Forums::NestedForumsController do
   context 'with administrator' do
 
     before :each do
-      sign_in Factory.build(:administrator)
+      sign_in_administrator
     end
 
     describe 'GET index' do
       it 'should be successful' do
-        get 'index', :forum_id => forum_id
+        get 'index', :forum_id => parent_forum_id
         response.should be_success
       end
     end
 
     describe 'GET new' do
       it 'should be successful' do
-        get 'new', :forum_id => forum_id
+        get 'new', :forum_id => parent_forum_id
         response.should be_success
       end
     end

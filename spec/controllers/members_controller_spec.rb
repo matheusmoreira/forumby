@@ -5,7 +5,7 @@ describe MembersController do
   context 'with regular member' do
 
     before :each do
-      sign_in Factory.build(:member)
+      sign_in_member
     end
 
     describe 'GET index' do

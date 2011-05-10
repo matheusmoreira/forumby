@@ -29,7 +29,7 @@ group :development do
   gem 'css_parser'
 end
 
-group :test do
+group :development, :test do
 
   gem 'rspec-rails'
   gem 'factory_girl_rails'

@@ -10,4 +10,16 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
   config.include Devise::TestHelpers, :type => :controller
 
+  def sign_in_member
+    sign_in Factory(:member)
+  end
+
+  def sign_in_moderator
+    sign_in Factory(:moderator)
+  end
+
+  def sign_in_administrator
+    sign_in Factory(:administrator)
+  end
+
 end

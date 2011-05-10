@@ -2,15 +2,17 @@ require 'spec_helper'
 
 describe Forum do
 
-  let(:forum)                  { Factory(:forum) }
-  let(:topic)                  { Factory(:topic) }
-  let(:forum_without_category) { Factory(:forum_without_category) }
-  let(:forum_with_category)    { Factory(:forum_with_category) }
-  let(:forum_without_parent)   { Factory(:forum_without_parent) }
-  let(:forum_with_parent)      { Factory(:forum_with_parent) }
-  let(:top_level_forum)        { Factory(:top_level_forum) }
+  let(:forum)                     { Factory(:forum) }
+  let(:topic)                     { Factory(:topic) }
+  let(:forum_without_category)    { Factory(:forum_without_category) }
+  let(:forum_with_category)       { Factory(:forum_with_category) }
+  let(:forum_without_parent)      { Factory(:forum_without_parent) }
+  let(:forum_with_parent)         { Factory(:forum_with_parent) }
+  let(:top_level_forum)           { Factory(:top_level_forum) }
+  let(:forum_without_description) { Factory(:forum_without_description) }
+  let(:forum_with_description)    { Factory(:forum_with_description) }
 
-  subject                      { forum }
+  subject                         { forum }
 
   it { should have_many(:nested_forums) }
   it { should have_many(:topics) }
@@ -69,6 +71,14 @@ describe Forum do
 
   it 'should be nested' do
     forum_with_parent.nested?.should be_true
+  end
+
+  it 'should have no description' do
+    forum_without_description.has_description?.should be_false
+  end
+
+  it 'should have a description' do
+    forum_with_description.has_description?.should be_true
   end
 
 end
