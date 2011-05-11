@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$blueprint-font-size".
-        on line 73 of /home/matheus/projects/forumby/app/stylesheets/forumby.sass
+        on line 102 of /home/matheus/projects/forumby/app/stylesheets/forumby.sass
 
-68: $topic-post-header-margin: 0px
-69: $topic-post-header-color: $header-color
-70: 
-71: $post-margin: 8px
-72: $post-padding: 8px
-73: $post-font-size: $blueprint-font-size
-74: $post-text-color: $font-color
-75: $post-background-color: $category-background-color
-76: $post-header-margin: 0px
-77: $post-header-color: $header-color
-78: 
+97: $topic-post-header-margin: 0px
+98: $topic-post-header-color: $header-color
+99: 
+100: $post-margin: 8px
+101: $post-padding: 8px
+102: $post-font-size: $blueprint-font-size
+103: $post-text-color: $font-color
+104: $post-background-color: $forumby-grey
+105: $post-header-margin: 0px
+106: $post-header-color: $header-color
+107: 
 
 Backtrace:
-/home/matheus/projects/forumby/app/stylesheets/forumby.sass:73
+/home/matheus/projects/forumby/app/stylesheets/forumby.sass:102
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/script/variable.rb:45:in `_perform'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/script/node.rb:40:in `perform'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:236:in `visit_variable'
@@ -86,4 +86,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$blueprint-font-size\".\A         on line 73 of /home/matheus/projects/forumby/app/stylesheets/forumby.sass\A \A 68: $topic-post-header-margin: 0px\A 69: $topic-post-header-color: $header-color\A 70: \A 71: $post-margin: 8px\A 72: $post-padding: 8px\A 73: $post-font-size: $blueprint-font-size\A 74: $post-text-color: $font-color\A 75: $post-background-color: $category-background-color\A 76: $post-header-margin: 0px\A 77: $post-header-color: $header-color\A 78: "; }
+  content: "Syntax error: Undefined variable: \"$blueprint-font-size\".\A         on line 102 of /home/matheus/projects/forumby/app/stylesheets/forumby.sass\A \A 97: $topic-post-header-margin: 0px\A 98: $topic-post-header-color: $header-color\A 99: \A 100: $post-margin: 8px\A 101: $post-padding: 8px\A 102: $post-font-size: $blueprint-font-size\A 103: $post-text-color: $font-color\A 104: $post-background-color: $forumby-grey\A 105: $post-header-margin: 0px\A 106: $post-header-color: $header-color\A 107: "; }
