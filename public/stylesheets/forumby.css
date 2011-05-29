@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$blueprint-font-size".
-        on line 102 of /home/matheus/projects/forumby/app/stylesheets/forumby.sass
+        on line 99 of /home/matheus/projects/forumby/app/stylesheets/forumby.sass
 
-97: $topic-post-header-margin: 0px
-98: $topic-post-header-color: $header-color
-99: 
-100: $post-margin: 8px
-101: $post-padding: 8px
-102: $post-font-size: $blueprint-font-size
-103: $post-text-color: $font-color
-104: $post-background-color: $forumby-grey
-105: $post-header-margin: 0px
-106: $post-header-color: $header-color
-107: 
+94: $topic-post-margin: 0px
+95: $topic-post-padding: 0px
+96: $topic-post-border-width: 1px
+97: $topic-post-border-style: solid
+98: $topic-post-border-color: $forumby-grey
+99: $topic-post-content-font-size: $blueprint-font-size
+100: $topic-post-text-color: $font-color
+101: $topic-post-background-color: $forumby-background-color
+102: $topic-post-header-margin: 0px
+103: $topic-post-header-color: $header-color
+104: 
 
 Backtrace:
-/home/matheus/projects/forumby/app/stylesheets/forumby.sass:102
+/home/matheus/projects/forumby/app/stylesheets/forumby.sass:99
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/script/variable.rb:45:in `_perform'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/script/node.rb:40:in `perform'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/sass-3.1.1/lib/sass/tree/visitors/perform.rb:236:in `visit_variable'
@@ -51,7 +51,7 @@ Backtrace:
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/warden-1.0.4/lib/warden/manager.rb:34:in `call'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
-/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
@@ -64,21 +64,21 @@ Backtrace:
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
-/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
-/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/lock.rb:11:in `block in call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
 <internal:prelude>:10:in `synchronize'
-/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
 /usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
-/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
-/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
 /usr/local/rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
 /usr/local/rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
 /usr/local/rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
@@ -86,4 +86,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$blueprint-font-size\".\A         on line 102 of /home/matheus/projects/forumby/app/stylesheets/forumby.sass\A \A 97: $topic-post-header-margin: 0px\A 98: $topic-post-header-color: $header-color\A 99: \A 100: $post-margin: 8px\A 101: $post-padding: 8px\A 102: $post-font-size: $blueprint-font-size\A 103: $post-text-color: $font-color\A 104: $post-background-color: $forumby-grey\A 105: $post-header-margin: 0px\A 106: $post-header-color: $header-color\A 107: "; }
+  content: "Syntax error: Undefined variable: \"$blueprint-font-size\".\A         on line 99 of /home/matheus/projects/forumby/app/stylesheets/forumby.sass\A \A 94: $topic-post-margin: 0px\A 95: $topic-post-padding: 0px\A 96: $topic-post-border-width: 1px\A 97: $topic-post-border-style: solid\A 98: $topic-post-border-color: $forumby-grey\A 99: $topic-post-content-font-size: $blueprint-font-size\A 100: $topic-post-text-color: $font-color\A 101: $topic-post-background-color: $forumby-background-color\A 102: $topic-post-header-margin: 0px\A 103: $topic-post-header-color: $header-color\A 104: "; }

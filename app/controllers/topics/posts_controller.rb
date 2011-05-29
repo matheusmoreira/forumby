@@ -24,6 +24,7 @@ class Topics::PostsController < ApplicationController
   # POST /topics/:topic_id/posts
   def create
     post.topic = topic
+    post.member = current_member
     post.save
     respond_with post
   end

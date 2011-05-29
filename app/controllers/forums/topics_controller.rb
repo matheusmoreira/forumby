@@ -8,6 +8,7 @@ class Forums::TopicsController < ApplicationController
   expose(:topics)         { forum.topics }
   expose(:topics_in_page) { topics.paginate :page => params[:page] }
   expose(:topic)
+  expose(:first_post)     { topic.first_post }
 
   authorize_resource
 
@@ -24,7 +25,8 @@ class Forums::TopicsController < ApplicationController
   # POST /forums/:forum_id/topics
   def create
     topic.forum = forum
-    topic.save
+    first_post.topic = topic
+    first_post.member = current_member
     respond_with topic
   end
 

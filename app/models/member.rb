@@ -9,6 +9,8 @@ class Member < ActiveRecord::Base
          :lockable,
          :validatable
 
+  has_many :posts
+
   # Devise already validates presence of email and password
   validates_presence_of :name
 

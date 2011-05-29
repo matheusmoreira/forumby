@@ -4,4 +4,8 @@ module TopicsHelper
     render :partial => partial, :collection => topic.posts
   end
 
+  def author_information_for(topic_post, partial = 'topics/posts/member')
+    render :partial => partial, :object => topic_post.member
+  end
+
 end
