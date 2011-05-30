@@ -612,7 +612,7 @@ header #member-panel .links a {
   *display: inline;
 }
 
-/* line 140, ../../app/stylesheets/forumby.sass */
+/* line 151, ../../app/stylesheets/forumby.sass */
 #forumby {
   display: block;
   margin: 16px;
@@ -620,13 +620,13 @@ header #member-panel .links a {
   color: #333333;
   background-color: white;
 }
-/* line 150, ../../app/stylesheets/forumby.sass */
+/* line 161, ../../app/stylesheets/forumby.sass */
 #forumby h1, #forumby h2, #forumby h3, #forumby h4, #forumby h5, #forumby h6 {
   margin: 0px;
   color: #222222;
 }
 
-/* line 155, ../../app/stylesheets/forumby.sass */
+/* line 166, ../../app/stylesheets/forumby.sass */
 .category {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -640,12 +640,12 @@ header #member-panel .links a {
   color: #333333;
   background-color: #edeceb;
 }
-/* line 165, ../../app/stylesheets/forumby.sass */
+/* line 176, ../../app/stylesheets/forumby.sass */
 .category h1, .category h2, .category h3, .category h4, .category h5, .category h6 {
   margin: 0px;
   color: #222222;
 }
-/* line 170, ../../app/stylesheets/forumby.sass */
+/* line 181, ../../app/stylesheets/forumby.sass */
 .category .forums {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -659,7 +659,15 @@ header #member-panel .links a {
   color: #333333;
   background-color: #dcdbda;
 }
-/* line 180, ../../app/stylesheets/forumby.sass */
+/* line 191, ../../app/stylesheets/forumby.sass */
+.category .description {
+  margin: 0px 0px 4px 0px;
+  padding: 8px 0px 0px 4px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #bab9b8;
+}
+/* line 200, ../../app/stylesheets/forumby.sass */
 .category .category_forum {
   display: inline-block;
   margin: 4px;
@@ -667,7 +675,7 @@ header #member-panel .links a {
   color: #333333;
   background-color: #dcdbda;
 }
-/* line 190, ../../app/stylesheets/forumby.sass */
+/* line 210, ../../app/stylesheets/forumby.sass */
 .category .category_forum h1, .category .category_forum h2, .category .category_forum h3, .category .category_forum h4, .category .category_forum h5, .category .category_forum h6 {
   display: inline-block;
   margin: 0px;
@@ -675,7 +683,7 @@ header #member-panel .links a {
   color: #222222;
 }
 
-/* line 198, ../../app/stylesheets/forumby.sass */
+/* line 218, ../../app/stylesheets/forumby.sass */
 .forum {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -692,12 +700,20 @@ header #member-panel .links a {
   color: #333333;
   background-color: white;
 }
-/* line 213, ../../app/stylesheets/forumby.sass */
+/* line 233, ../../app/stylesheets/forumby.sass */
 .forum h1, .forum h2, .forum h3, .forum h4, .forum h5, .forum h6 {
   margin: 0px;
   color: #222222;
 }
-/* line 218, ../../app/stylesheets/forumby.sass */
+/* line 238, ../../app/stylesheets/forumby.sass */
+.forum .description {
+  margin: 0px 0px 4px 0px;
+  padding: 8px 0px 0px 4px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #91b7e6;
+}
+/* line 247, ../../app/stylesheets/forumby.sass */
 .forum .nested-forums {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -714,25 +730,25 @@ header #member-panel .links a {
   color: #333333;
   background-color: white;
 }
-/* line 233, ../../app/stylesheets/forumby.sass */
+/* line 262, ../../app/stylesheets/forumby.sass */
 .forum .nested_forum {
   display: inline-block;
   margin: 4px;
   padding: 4px;
   color: #333333;
 }
-/* line 241, ../../app/stylesheets/forumby.sass */
+/* line 270, ../../app/stylesheets/forumby.sass */
 .forum .nested_forum h1, .forum .nested_forum h2, .forum .nested_forum h3, .forum .nested_forum h4, .forum .nested_forum h5, .forum .nested_forum h6 {
   margin: 0px;
   color: #edeceb;
 }
-/* line 246, ../../app/stylesheets/forumby.sass */
+/* line 275, ../../app/stylesheets/forumby.sass */
 .forum .topics {
   display: block;
   margin: 4px;
   padding: 4px;
 }
-/* line 252, ../../app/stylesheets/forumby.sass */
+/* line 281, ../../app/stylesheets/forumby.sass */
 .forum .forum_topic {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -746,13 +762,13 @@ header #member-panel .links a {
   color: #333333;
   background-color: #edeceb;
 }
-/* line 262, ../../app/stylesheets/forumby.sass */
+/* line 291, ../../app/stylesheets/forumby.sass */
 .forum .forum_topic h1, .forum .forum_topic h2, .forum .forum_topic h3, .forum .forum_topic h4, .forum .forum_topic h5, .forum .forum_topic h6 {
   margin: 0px;
   color: #222222;
 }
 
-/* line 267, ../../app/stylesheets/forumby.sass */
+/* line 296, ../../app/stylesheets/forumby.sass */
 .top_level_forum {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -766,13 +782,13 @@ header #member-panel .links a {
   color: #333333;
   background-color: #91b7e6;
 }
-/* line 277, ../../app/stylesheets/forumby.sass */
+/* line 306, ../../app/stylesheets/forumby.sass */
 .top_level_forum h1, .top_level_forum h2, .top_level_forum h3, .top_level_forum h4, .top_level_forum h5, .top_level_forum h6 {
   margin: 0px;
   color: #222222;
 }
 
-/* line 282, ../../app/stylesheets/forumby.sass */
+/* line 311, ../../app/stylesheets/forumby.sass */
 .topic {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -789,18 +805,18 @@ header #member-panel .links a {
   color: #333333;
   background-color: white;
 }
-/* line 297, ../../app/stylesheets/forumby.sass */
+/* line 326, ../../app/stylesheets/forumby.sass */
 .topic h1, .topic h2, .topic h3, .topic h4, .topic h5, .topic h6 {
   margin: 0px;
   color: #222222;
 }
-/* line 302, ../../app/stylesheets/forumby.sass */
+/* line 331, ../../app/stylesheets/forumby.sass */
 .topic .posts {
   display: block;
   margin: 8px;
   padding: 8px;
 }
-/* line 308, ../../app/stylesheets/forumby.sass */
+/* line 337, ../../app/stylesheets/forumby.sass */
 .topic .topic_post {
   display: block;
   margin: 0px;
@@ -811,12 +827,12 @@ header #member-panel .links a {
   color: #333333;
   background-color: white;
 }
-/* line 323, ../../app/stylesheets/forumby.sass */
+/* line 352, ../../app/stylesheets/forumby.sass */
 .topic .topic_post h1, .topic .topic_post h2, .topic .topic_post h3, .topic .topic_post h4, .topic .topic_post h5, .topic .topic_post h6 {
   margin: 0px;
   color: #222222;
 }
-/* line 328, ../../app/stylesheets/forumby.sass */
+/* line 357, ../../app/stylesheets/forumby.sass */
 .topic .topic_post .topic_post_member {
   display: inline-block;
   margin: 0px;
@@ -824,12 +840,12 @@ header #member-panel .links a {
   color: #333333;
   background-color: #edeceb;
 }
-/* line 338, ../../app/stylesheets/forumby.sass */
+/* line 367, ../../app/stylesheets/forumby.sass */
 .topic .topic_post .topic_post_member h1, .topic .topic_post .topic_post_member h2, .topic .topic_post .topic_post_member h3, .topic .topic_post .topic_post_member h4, .topic .topic_post .topic_post_member h5, .topic .topic_post .topic_post_member h6 {
   margin: 0px;
   color: #222222;
 }
-/* line 343, ../../app/stylesheets/forumby.sass */
+/* line 372, ../../app/stylesheets/forumby.sass */
 .topic .topic_post article {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -845,7 +861,7 @@ header #member-panel .links a {
   background-color: white;
 }
 
-/* line 355, ../../app/stylesheets/forumby.sass */
+/* line 384, ../../app/stylesheets/forumby.sass */
 .post {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -862,12 +878,12 @@ header #member-panel .links a {
   color: #333333;
   background-color: #edeceb;
 }
-/* line 370, ../../app/stylesheets/forumby.sass */
+/* line 399, ../../app/stylesheets/forumby.sass */
 .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
   margin: 0px;
   color: #222222;
 }
-/* line 375, ../../app/stylesheets/forumby.sass */
+/* line 404, ../../app/stylesheets/forumby.sass */
 .post .post_member {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -881,12 +897,12 @@ header #member-panel .links a {
   color: #333333;
   background-color: #edeceb;
 }
-/* line 385, ../../app/stylesheets/forumby.sass */
+/* line 414, ../../app/stylesheets/forumby.sass */
 .post .post_member h1, .post .post_member h2, .post .post_member h3, .post .post_member h4, .post .post_member h5, .post .post_member h6 {
   margin: 0px;
   color: #222222;
 }
-/* line 390, ../../app/stylesheets/forumby.sass */
+/* line 419, ../../app/stylesheets/forumby.sass */
 .post article {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
