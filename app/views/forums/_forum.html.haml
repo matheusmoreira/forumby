@@ -3,6 +3,6 @@
   - if forum.has_description?
     %p.description= forum.description
   - if forum.has_nested_forums?
-    .nested-forums= nested_forums_for forum
+    %ul.nested-forums= nested_forums_for forum
   - if forum.has_topics?
     .topics= topics_for forum

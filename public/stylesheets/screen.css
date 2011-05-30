@@ -646,6 +646,14 @@ header #member-panel .links a {
   color: #222222;
 }
 /* line 181, ../../app/stylesheets/forumby.sass */
+.category .description {
+  margin: 0px 0px 4px 0px;
+  padding: 8px 0px 0px 4px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #bab9b8;
+}
+/* line 190, ../../app/stylesheets/forumby.sass */
 .category .forums {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -658,14 +666,6 @@ header #member-panel .links a {
   padding: 8px;
   color: #333333;
   background-color: #dcdbda;
-}
-/* line 191, ../../app/stylesheets/forumby.sass */
-.category .description {
-  margin: 0px 0px 4px 0px;
-  padding: 8px 0px 0px 4px;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #bab9b8;
 }
 /* line 200, ../../app/stylesheets/forumby.sass */
 .category .category_forum {
