@@ -27,6 +27,7 @@ class Forums::TopicsController < ApplicationController
     topic.forum = forum
     first_post.topic = topic
     first_post.member = current_member
+    topic.save
     respond_with topic
   end
 
