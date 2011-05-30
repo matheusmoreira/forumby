@@ -1,2 +1,4 @@
 %section[top_level_forum, :top_level]
   %h2= link_to top_level_forum.name, forum_path(top_level_forum)
+  - if top_level_forum.has_description?
+    %p= top_level_forum.description
