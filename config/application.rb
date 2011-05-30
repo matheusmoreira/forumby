@@ -32,7 +32,7 @@ module Forumby
     # config.i18n.default_locale = :de
 
     # JavaScript files you want as :defaults (application.js is always included).
-    config.action_view.javascript_expansions[:defaults] = %w(rails)
+    config.action_view.javascript_expansions[:defaults] = %w(jquery_ujs)
 
     # :jquery expansion for jQuery JavaScript files.
     config.action_view.javascript_expansions[:jquery] = %w(jquery.min jquery-ui.min)
