@@ -12,7 +12,7 @@ class TopicsController < ApplicationController
 
   # GET /topics
   def index
-    respond_with topic
+    respond_with topics
   end
 
   # GET /topics/:id

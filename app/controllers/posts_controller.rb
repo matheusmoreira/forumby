@@ -12,7 +12,7 @@ class PostsController < ApplicationController
 
   # GET /posts
   def index
-    respond_with post
+    respond_with posts
   end
 
   # GET /posts/:id

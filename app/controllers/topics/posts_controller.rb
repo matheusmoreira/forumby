@@ -13,7 +13,7 @@ class Topics::PostsController < ApplicationController
 
   # GET /topics/:topic_id/posts
   def index
-    respond_with post
+    respond_with posts
   end
 
   # GET /topics/:topic_id/posts/new
