@@ -8,14 +8,32 @@ Factory.define :member do |f|
 
 end
 
+Factory.define :moderator, :parent => :member do |f|
+
+  f.moderator true
+
+end
+
 Factory.define :administrator, :parent => :member do |f|
 
   f.administrator true
 
 end
 
-Factory.define :moderator, :parent => :member do |f|
+Factory.define :banned_member, :parent => :member do |f|
 
-  f.moderator true
+  f.banned true
+
+end
+
+Factory.define :banned_moderator, :parent => :moderator do |f|
+
+  f.banned true
+
+end
+
+Factory.define :banned_administrator, :parent => :administrator do |f|
+
+  f.banned true
 
 end
