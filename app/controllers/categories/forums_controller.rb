@@ -1,6 +1,6 @@
 class Categories::ForumsController < ApplicationController
 
-  before_filter :authenticate_member!
+  before_filter :authenticate_member!, :except => :index
 
   respond_to :html
 
