@@ -2,18 +2,9 @@ require 'spec_helper'
 
 describe ForumsController do
 
-  let(:forum)    { Factory(:forum) }
-  let(:forum_id) { forum.id }
+  let(:forum) { Factory(:forum) }
 
-  context 'with regular members' do
-
-    before :each do
-      sign_in_member
-    end
-
-    after :each do
-      sign_out_member
-    end
+  context 'without member' do
 
     describe 'GET index' do
       it 'should be successful' do
@@ -24,7 +15,7 @@ describe ForumsController do
 
     describe 'GET show' do
       it 'should be successful' do
-        get 'show', :id => forum_id
+        get 'show', :id => forum.id
         response.should be_success
       end
     end
@@ -38,21 +29,19 @@ describe ForumsController do
 
     describe 'GET edit' do
       it 'should not be successful' do
-        get 'edit', :id => forum_id
+        get 'edit', :id => forum.id
         response.should_not be_success
       end
     end
 
   end
 
-  context 'with moderator' do
+  context 'with a regular member' do
+
+    let(:member) { Factory(:member) }
 
     before :each do
-      sign_in_moderator
-    end
-
-    after :each do
-      sign_out_moderator
+      sign_in member
     end
 
     describe 'GET index' do
@@ -64,7 +53,7 @@ describe ForumsController do
 
     describe 'GET show' do
       it 'should be successful' do
-        get 'show', :id => forum_id
+        get 'show', :id => forum.id
         response.should be_success
       end
     end
@@ -78,21 +67,19 @@ describe ForumsController do
 
     describe 'GET edit' do
       it 'should not be successful' do
-        get 'edit', :id => forum_id
+        get 'edit', :id => forum.id
         response.should_not be_success
       end
     end
 
   end
 
-  context 'with administrator' do
+  context 'with a banned member' do
+
+    let(:banned_member) { Factory(:banned_member) }
 
     before :each do
-      sign_in_administrator
-    end
-
-    after :each do
-      sign_out_administrator
+      sign_in banned_member
     end
 
     describe 'GET index' do
@@ -104,7 +91,121 @@ describe ForumsController do
 
     describe 'GET show' do
       it 'should be successful' do
-        get 'show', :id => forum_id
+        get 'show', :id => forum.id
+        response.should be_success
+      end
+    end
+
+    describe 'GET new' do
+      it 'should not be successful' do
+        get 'new'
+        response.should_not be_success
+      end
+    end
+
+    describe 'GET edit' do
+      it 'should not be successful' do
+        get 'edit', :id => forum.id
+        response.should_not be_success
+      end
+    end
+
+  end
+
+  context 'with a regular moderator' do
+
+    let(:moderator) { Factory(:moderator) }
+
+    before :each do
+      sign_in moderator
+    end
+
+    describe 'GET index' do
+      it 'should be successful' do
+        get 'index'
+        response.should be_success
+      end
+    end
+
+    describe 'GET show' do
+      it 'should be successful' do
+        get 'show', :id => forum.id
+        response.should be_success
+      end
+    end
+
+    describe 'GET new' do
+      it 'should not be successful' do
+        get 'new'
+        response.should_not be_success
+      end
+    end
+
+    describe 'GET edit' do
+      it 'should not be successful' do
+        get 'edit', :id => forum.id
+        response.should_not be_success
+      end
+    end
+
+  end
+
+  context 'with a banned moderator' do
+
+    let(:banned_moderator) { Factory(:banned_moderator) }
+
+    before :each do
+      sign_in banned_moderator
+    end
+
+    describe 'GET index' do
+      it 'should be successful' do
+        get 'index'
+        response.should be_success
+      end
+    end
+
+    describe 'GET show' do
+      it 'should be successful' do
+        get 'show', :id => forum.id
+        response.should be_success
+      end
+    end
+
+    describe 'GET new' do
+      it 'should not be successful' do
+        get 'new'
+        response.should_not be_success
+      end
+    end
+
+    describe 'GET edit' do
+      it 'should not be successful' do
+        get 'edit', :id => forum.id
+        response.should_not be_success
+      end
+    end
+
+  end
+
+  context 'with an administrator' do
+
+    let(:administrator) { Factory(:administrator) }
+
+    before :each do
+      sign_in administrator
+    end
+
+    describe 'GET index' do
+      it 'should be successful' do
+        get 'index'
+        response.should be_success
+      end
+    end
+
+    describe 'GET show' do
+      it 'should be successful' do
+        get 'show', :id => forum.id
         response.should be_success
       end
     end
@@ -118,7 +219,45 @@ describe ForumsController do
 
     describe 'GET edit' do
       it 'should be successful' do
-        get 'edit', :id => forum_id
+        get 'edit', :id => forum.id
+        response.should be_success
+      end
+    end
+
+  end
+
+  context 'with a banned administrator' do
+
+    let(:banned_administrator) { Factory(:banned_administrator) }
+
+    before :each do
+      sign_in banned_administrator
+    end
+
+    describe 'GET index' do
+      it 'should be successful' do
+        get 'index'
+        response.should be_success
+      end
+    end
+
+    describe 'GET show' do
+      it 'should be successful' do
+        get 'show', :id => forum.id
+        response.should be_success
+      end
+    end
+
+    describe 'GET new' do
+      it 'should be successful' do
+        get 'new'
+        response.should be_success
+      end
+    end
+
+    describe 'GET edit' do
+      it 'should be successful' do
+        get 'edit', :id => forum.id
         response.should be_success
       end
     end

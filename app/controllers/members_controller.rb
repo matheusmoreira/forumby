@@ -6,15 +6,15 @@ class MembersController < ApplicationController
   expose(:members_in_page) { members.paginate :page => params[:page] }
   expose(:member)
 
-  authorize_resource
-
   # GET /members
   def index
+    authorize! :index, Member
     respond_with members
   end
 
   # GET /members/:id
   def show
+    authorize! :show, member
     respond_with member
   end
 

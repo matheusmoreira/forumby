@@ -9,20 +9,21 @@ class Forums::NestedForumsController < ApplicationController
   expose(:nested_forums_in_page) { nested_forums.paginate :page => params[:page] }
   expose(:nested_forum)
 
-  authorize_resource :class => 'Forum'
-
   # GET /forums/:forum_id/nested_forums
   def index
+    authorize! :index, Forum
     respond_with nested_forums
   end
 
   # GET /forums/:forum_id/nested_forums/new
   def new
+    authorize! :new, nested_forum
     respond_with nested_forum
   end
 
   # POST /forums/:forum_id/nested_forums
   def create
+    authorize! :create, nested_forum
     nested_forum.parent_forum = forum
     nested_forum.save
     respond_with nested_forum
