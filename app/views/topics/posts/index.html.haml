@@ -2,3 +2,6 @@
   %h1= t 'topics.posts.index.heading', :topic => topic.title
   = list_for :posts, posts_in_page
   %nav= will_paginate posts_in_page
+
+- if can? :create, Post
+  = link_button_to t('topics.posts.new.link'), new_topic_post_path(topic)

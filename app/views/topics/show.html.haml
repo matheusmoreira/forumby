@@ -1,3 +1,6 @@
 %section#show-topic
   %h1= t 'topics.show.heading'
   = render topic
+
+- if can? :create, Post
+  = link_button_to t('topics.posts.new.link'), new_topic_post_path(topic)

@@ -43,6 +43,7 @@ en:
         heading: 'Forums in %{category}'
       new:
         heading: 'New Forum in %{category}'
+        link: 'Create Forum'
 
   forums:
     index:
@@ -66,6 +67,7 @@ en:
         heading: 'Nested Forums in %{forum}'
       new:
         heading: 'New Nested Forum in %{forum}'
+        link: 'Create Nested Forum'
         form:
           submit: 'Create Nested Forum'
       form:
@@ -76,6 +78,7 @@ en:
         heading: 'Topics in %{forum}'
       new:
         heading: 'New Topic'
+        link: 'Create Topic'
         form:
           submit: 'Create Topic'
 
@@ -94,6 +97,7 @@ en:
         heading: 'All Posts in %{topic}'
       new:
         heading: 'New Post'
+        link: 'Post New Message'
         form:
           submit: 'Create Post'
 

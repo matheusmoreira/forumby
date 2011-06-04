@@ -2,3 +2,6 @@
   %h1= t 'forums.nested_forums.index.heading', :forum => forum.name
   = list_for :forums, nested_forums_in_page
   %nav= will_paginate nested_forums_in_page
+
+- if can? :create, Topic
+  = link_button_to t('forums.nested_forums.new.link'), new_forum_nested_forum_path(forum)

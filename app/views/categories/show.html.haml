@@ -1,3 +1,6 @@
 %section#show-category
   %h1= t 'categories.show.heading'
   = render category
+
+- if can? :create, Forum
+  = link_button_to t('categories.forums.new.link'), new_category_forum_path(category)

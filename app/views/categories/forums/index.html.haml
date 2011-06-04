@@ -2,3 +2,6 @@
   %h1= t 'categories.forums.index.heading', :category => category.name
   = list_for :forums, forums_in_page
   %nav= will_paginate forums_in_page
+
+- if can? :create, Forum
+  = link_button_to t('categories.forums.new.link'), new_category_forum_path(category)
