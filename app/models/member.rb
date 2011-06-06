@@ -29,6 +29,19 @@ class Member < ActiveRecord::Base
                   :password_confirmation,
                   :remember_me
 
+  def topics
+    # How can I optimize this?
+    Topic.select { |topic| topic.first_post.member.id == self.id }
+  end
+
+  def post_count
+    posts.count
+  end
+
+  def topic_count
+    topics.count
+  end
+
   def self.per_page
     50
   end

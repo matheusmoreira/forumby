@@ -5,6 +5,7 @@ describe Member do
   let(:member)        { Factory(:member) }
   let(:moderator)     { Factory(:moderator) }
   let(:administrator) { Factory(:administrator) }
+  let(:topic)         { Factory(:topic) }
 
   subject { member }
 
@@ -39,6 +40,22 @@ describe Member do
     member = Factory.build :member, :password_confirmation => 'DOES NOT MATCH'
     member.save
     member.should_not be_persisted
+  end
+
+  it 'should return the correct topic count' do
+    5.times do |n|
+      member.posts.create :topic => topic,
+                          :content => "Test Post ##{n}"
+    end
+    member.topic_count.should == 1
+  end
+
+  it 'should return the correct post count' do
+    (post_count = 5).times do |n|
+      member.posts.create :topic => topic,
+                          :content => "Test Post ##{n}"
+    end
+    member.post_count.should == post_count
   end
 
 end

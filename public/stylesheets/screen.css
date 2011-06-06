@@ -586,6 +586,48 @@ header #member-panel .links a {
   color: #222222;
 }
 
+/* line 17, ../../app/stylesheets/forumby/_member.sass */
+.member {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  margin: 8px;
+  padding: 8px;
+  background-color: #edeceb;
+}
+/* line 25, ../../app/stylesheets/forumby/_member.sass */
+.member .member-portrait {
+  display: inline-block;
+}
+/* line 28, ../../app/stylesheets/forumby/_member.sass */
+.member .member-portrait .name {
+  display: inline-block;
+  font-size: 2em;
+}
+/* line 33, ../../app/stylesheets/forumby/_member.sass */
+.member .member-information {
+  display: inline-block;
+  margin: 8px;
+  padding: 8px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #c9c6c3;
+}
+/* line 44, ../../app/stylesheets/forumby/_member.sass */
+.member .member-information .topic-count {
+  display: block;
+  font-size: 1.4em;
+}
+/* line 49, ../../app/stylesheets/forumby/_member.sass */
+.member .member-information .post-count {
+  display: block;
+  font-size: 1.4em;
+}
+
 /* line 30, ../../app/stylesheets/forumby/_category.sass */
 .category {
   -moz-border-radius: 5px;

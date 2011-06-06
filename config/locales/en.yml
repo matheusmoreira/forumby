@@ -24,6 +24,16 @@ en:
     show:
       heading: 'Showing Member'
 
+    topics:
+      count:
+        one: '1 topic'
+        other: '%{count} topics'
+
+    posts:
+      count:
+        one: '1 post'
+        other: '%{count} posts'
+
   categories:
     index:
       heading: 'All Categories'

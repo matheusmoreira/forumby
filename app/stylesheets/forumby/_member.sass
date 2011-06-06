@@ -1,0 +1,52 @@
+$member-margin: 8px
+$member-padding: 8px
+$member-background-color: $forumby-grey
+
+$member-information-margin: 8px
+$member-information-padding: 8px
+$member-information-border-width: 1px
+$member-information-border-style: solid
+$member-information-border-color: darken($member-background-color, 15%)
+
+$member-name-font-size: 2em
+$member-topic-count-font-size: 1.4em
+$member-post-count-font-size: 1.4em
+
+// -- //
+
+.member
+  +round-block
+
+  margin: $member-margin
+  padding: $member-padding
+
+  background-color: $member-background-color
+
+  .member-portrait
+    +inline-block
+
+    .name
+      +inline-block
+
+      font-size: $member-name-font-size
+
+  .member-information
+    +inline-block
+
+    margin: $member-information-margin
+    padding: $member-information-padding
+
+    border-left:
+      width: $member-information-border-width
+      style: $member-information-border-style
+      color: $member-information-border-color
+
+    .topic-count
+      +block
+
+      font-size: $member-topic-count-font-size
+
+    .post-count
+      +block
+
+      font-size: $member-post-count-font-size

@@ -1,2 +1,6 @@
-%section[member]
-  %h2= link_to member.name, member_path(member)
+%div[member]
+  .member-portrait
+    = link_to member.name, member_path(member), :class => 'name'
+  .member-information
+    .topic-count= t 'members.topics.count', :count => member.topic_count
+    .post-count= t 'members.posts.count', :count => member.post_count
