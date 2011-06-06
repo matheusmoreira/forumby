@@ -1,0 +1,71 @@
+$post-margin: 8px
+$post-padding: 8px
+$post-border-width: 1px
+$post-border-style: solid
+$post-border-color: $forumby-grey
+$post-content-font-size: $blueprint-font-size
+$post-text-color: $font-color
+$post-background-color: $forumby-grey
+$post-header-margin: 0px
+$post-header-color: $header-color
+
+$post-member-margin: 8px
+$post-member-padding: 8px
+$post-member-text-color: $font-color
+$post-member-background-color: $forumby-grey
+$post-member-header-margin: 0px
+$post-member-header-color: $header-color
+
+$post-content-margin: 8px
+$post-content-padding: 8px
+$post-content-text-color: $font-color
+$post-content-background-color: white
+
+// -- //
+
+.post
+  +round-block
+
+  margin: $post-margin
+  padding: $post-padding
+
+  border:
+    width: $post-border-width
+    style: $post-border-style
+    color: $post-border-color
+
+  color: $post-text-color
+
+  background-color: $post-background-color
+
+  h1, h2, h3, h4, h5, h6
+    margin: $post-header-margin
+
+    color: $post-header-color
+
+  .post_member
+    +round-inline-block
+
+    margin: $post-member-margin
+    padding: $post-member-padding
+
+    color: $post-member-text-color
+
+    background-color: $post-member-background-color
+
+    h1, h2, h3, h4, h5, h6
+      margin: $post-member-header-margin
+
+      color: $post-member-header-color
+
+  article
+    +round-inline-block
+
+    margin: $post-content-margin
+    padding: $post-content-padding
+
+    font-size: $post-content-font-size
+
+    color: $post-content-text-color
+
+    background-color: $post-content-background-color

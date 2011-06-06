@@ -1,0 +1,140 @@
+$forum-padding: 8px
+$forum-margin: 8px
+$forum-border-width: 1px
+$forum-border-style: solid
+$forum-border-color: $forumby-blue
+$forum-text-color: $font-color
+$forum-background-color: $forumby-background-color
+$forum-header-margin: 0px
+$forum-header-color: $header-color
+$forum-description-margin: 0px 0px 4px 0px
+$forum-description-padding: 8px 0px 0px 4px
+$forum-description-border-top-width: 1px
+$forum-description-border-top-style: solid
+$forum-description-border-top-color: $forumby-blue
+
+$forum-nested-forums-margin: 8px
+$forum-nested-forums-padding: 8px
+$forum-nested-forums-border-width: 1px
+$forum-nested-forums-border-style: solid
+$forum-nested-forums-border-color: $forumby-blue
+$forum-nested-forums-color: $font-color
+$forum-nested-forums-background-color: $forum-background-color
+$forum-nested-forum-header-margin: 0px
+$forum-nested-forum-header-color: $forumby-grey
+
+$forum-nested-forum-margin: 4px
+$forum-nested-forum-padding: 4px
+$forum-nested-forum-text-color: $font-color
+
+$forum-topics-margin: 4px
+$forum-topics-padding: 4px
+
+$forum-topic-margin: 8px
+$forum-topic-padding: 8px
+$forum-topic-text-color: $font-color
+$forum-topic-background-color: $forumby-grey
+$forum-topic-header-margin: 0px
+$forum-topic-header-color: $header-color
+
+$top-level-forum-padding: 8px
+$top-level-forum-margin: 8px
+$top-level-forum-text-color: $font-color
+$top-level-forum-background-color: $forumby-blue
+$top-level-forum-header-margin: 0px
+$top-level-forum-header-color: $header-color
+
+// -- //
+
+.forum
+  +round-block
+
+  margin: $forum-margin
+  padding: $forum-padding
+
+  border:
+    width: $forum-border-width
+    style: $forum-border-style
+    color: $forum-border-color
+
+  color: $forum-text-color
+
+  background-color: $forum-background-color
+
+  h1, h2, h3, h4, h5, h6
+    margin: $forum-header-margin
+
+    color: $forum-header-color
+
+  .description
+    margin: $forum-description-margin
+    padding: $forum-description-padding
+
+    border-top:
+      width: $forum-description-border-top-width
+      style: $forum-description-border-top-style
+      color: $forum-description-border-top-color
+
+  .nested-forums
+    +round-block
+
+    margin: $forum-nested-forums-margin
+    padding: $forum-nested-forums-padding
+
+    border:
+      width: $forum-nested-forums-border-width
+      style: $forum-nested-forums-border-style
+      color: $forum-nested-forums-border-color
+
+    color: $forum-nested-forums-color
+
+    background-color: $forum-nested-forums-background-color
+
+  .nested_forum
+    +inline-block
+
+    margin: $forum-nested-forum-margin
+    padding: $forum-nested-forum-padding
+
+    color: $forum-nested-forum-text-color
+
+    h1, h2, h3, h4, h5, h6
+      margin: $forum-nested-forum-header-margin
+
+      color: $forum-nested-forum-header-color
+
+  .topics
+    +block
+
+    margin: $forum-topics-margin
+    padding: $forum-topics-padding
+
+  .forum_topic
+    +round-block
+
+    margin: $forum-topic-margin
+    padding: $forum-topic-padding
+
+    color: $forum-topic-text-color
+
+    background-color: $forum-topic-background-color
+
+    h1, h2, h3, h4, h5, h6
+      margin: $forum-topic-header-margin
+
+      color: $forum-topic-header-color
+
+.top_level_forum
+  +round-block
+
+  margin: $top-level-forum-margin
+  padding: $top-level-forum-padding
+
+  color: $top-level-forum-text-color
+
+  background-color: $top-level-forum-background-color
+
+  h1, h2, h3, h4, h5, h6
+    margin: $top-level-forum-header-margin
+
+    color: $top-level-forum-header-color

@@ -1,0 +1,80 @@
+// Category
+
+$category-margin: 8px
+$category-padding: 8px
+$category-text-color: $font-color
+$category-background-color: $forumby-grey
+$category-header-margin: 0px
+$category-header-color: $header-color
+$category-description-margin: 0px 0px 4px 0px
+$category-description-padding: 8px 0px 0px 4px
+$category-description-border-top-width: 1px
+$category-description-border-top-style: solid
+$category-description-border-top-color: $forumby-darker-grey
+
+$category-forums-margin: 8px
+$category-forums-padding: 8px
+$category-forums-text-color: $font-color
+$category-forums-background-color: $forumby-dark-grey
+
+$category-forum-margin: 4px
+$category-forum-padding: 4px
+$category-forum-text-color: $font-color
+$category-forum-background-color: $forumby-dark-grey
+$category-forum-header-margin: 0px
+$category-forum-header-font-size: 12px
+$category-forum-header-color: $header-color
+
+// -- //
+
+.category
+  +round-block
+
+  margin: $category-margin
+  padding: $category-padding
+
+  color: $category-text-color
+
+  background-color: $category-background-color
+
+  h1, h2, h3, h4, h5, h6
+    margin: $category-header-margin
+
+    color: $category-header-color
+
+  .description
+    margin: $category-description-margin
+    padding: $category-description-padding
+
+    border-top:
+      width: $category-description-border-top-width
+      style: $category-description-border-top-style
+      color: $category-description-border-top-color
+
+  .forums
+    +round-block
+
+    margin: $category-forums-margin
+    padding: $category-forums-padding
+
+    color: $category-forums-text-color
+
+    background-color: $category-forums-background-color
+
+  .category_forum
+    +inline-block
+
+    margin: $category-forum-margin
+    padding: $category-forum-padding
+
+    color: $category-forum-text-color
+
+    background-color: $category-forum-background-color
+
+    h1, h2, h3, h4, h5, h6
+      +inline-block
+
+      margin: $category-forum-header-margin
+
+      font-size: $category-forum-header-font-size
+      color: $category-forum-header-color

@@ -1,0 +1,110 @@
+$topic-margin: 8px
+$topic-padding: 8px
+$topic-border-width: 1px
+$topic-border-style: solid
+$topic-border-color: $forumby-dark-grey
+$topic-text-color: $font-color
+$topic-background-color: $forumby-background-color
+$topic-header-margin: 0px
+$topic-header-color: $header-color
+
+$topic-posts-margin: 8px
+$topic-posts-padding: 8px
+
+$topic-post-margin: 0px
+$topic-post-padding: 0px
+$topic-post-border-width: 1px
+$topic-post-border-style: solid
+$topic-post-border-color: $forumby-grey
+$topic-post-content-font-size: $blueprint-font-size
+$topic-post-text-color: $font-color
+$topic-post-background-color: $forumby-background-color
+$topic-post-header-margin: 0px
+$topic-post-header-color: $header-color
+
+$topic-post-member-margin: 0px
+$topic-post-member-padding: 16px
+$topic-post-member-text-color: $font-color
+$topic-post-member-background-color: $forumby-grey
+$topic-post-member-header-margin: 0px
+$topic-post-member-header-color: $header-color
+
+$topic-post-content-margin: 0px
+$topic-post-content-padding: 16px
+$topic-post-content-text-color: $font-color
+$topic-post-content-background-color: white
+
+// -- //
+
+.topic
+  +round-block
+
+  margin: $topic-margin
+  padding: $topic-padding
+
+  border:
+    width: $topic-border-width
+    style: $topic-border-style
+    color: $topic-border-color
+
+  color: $topic-text-color
+
+  background-color: $topic-background-color
+
+  h1, h2, h3, h4, h5, h6
+    margin: $topic-header-margin
+
+    color: $topic-header-color
+
+  .posts
+    +block
+
+    margin: $topic-posts-margin
+    padding: $topic-posts-padding
+
+  .topic_post
+    +block
+
+    margin: $topic-post-margin
+    padding: $topic-post-padding
+
+    border:
+      width: $topic-post-border-width
+      style: $topic-post-border-style
+      color: $topic-post-border-color
+
+    color: $topic-post-text-color
+
+    background-color: $topic-post-background-color
+
+    h1, h2, h3, h4, h5, h6
+      margin: $topic-post-header-margin
+
+      color: $topic-post-header-color
+
+    .topic_post_member
+      +inline-block
+
+      margin: $topic-post-member-margin
+      padding: $topic-post-member-padding
+
+      color: $topic-post-member-text-color
+
+      background-color: $topic-post-member-background-color
+
+      h1, h2, h3, h4, h5, h6
+        margin: $topic-post-member-header-margin
+
+        color: $topic-post-member-header-color
+
+    article
+      +round-inline-block
+
+      margin: $topic-post-content-margin
+      padding: $topic-post-content-padding
+
+      font-size: $topic-post-content-font-size
+
+      color: $topic-post-content-text-color
+
+      background-color: $topic-post-content-background-color
