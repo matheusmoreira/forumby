@@ -25,11 +25,15 @@ en:
       heading: 'Showing Member'
 
     topics:
+      index:
+        heading: 'Topics by %{member}'
       count:
         one: '1 topic'
         other: '%{count} topics'
 
     posts:
+      index:
+        heading: 'Posts by %{member}'
       count:
         one: '1 post'
         other: '%{count} posts'

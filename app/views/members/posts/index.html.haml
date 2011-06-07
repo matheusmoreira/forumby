@@ -1,0 +1,4 @@
+%section#member-post-index
+  %h1= t 'members.posts.index.heading', :member => member.name
+  = list_for 'members/posts', posts_in_page
+  %nav= will_paginate posts_in_page

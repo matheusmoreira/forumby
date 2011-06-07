@@ -1,0 +1,4 @@
+%section#member-topic-index
+  %h1= t 'members.topics.index.heading', :member => member.name
+  = list_for 'members/topics', topics_in_page
+  %nav= will_paginate topics_in_page

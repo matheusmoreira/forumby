@@ -4,7 +4,10 @@ Forumby::Application.routes.draw do
 
   devise_for :members
 
-  resources :members, :only => [ :index, :show ]
+  resources :members, :only => [ :index, :show ] do
+    resources :topics, :module => :members, :only => :index
+    resources :posts, :module => :members, :only => :index
+  end
 
   resources :categories do
     resources :forums, :module => :categories, :only => [ :index, :new, :create ]

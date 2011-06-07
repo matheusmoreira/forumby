@@ -2,5 +2,9 @@
   .member-portrait
     = link_to member.name, member_path(member), :class => 'name'
   .member-information
-    .topic-count= t 'members.topics.count', :count => member.topic_count
-    .post-count= t 'members.posts.count', :count => member.post_count
+    = link_to t('members.topics.count', :count => member.topic_count),
+              member_topics_path(member),
+              :class => 'topic-count'
+    = link_to t('members.posts.count', :count => member.post_count),
+              member_posts_path(member),
+              :class => 'post-count'
