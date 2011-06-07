@@ -1,4 +1,6 @@
-%section[top_level_forum, :top_level]
-  %h2= link_to top_level_forum.name, forum_path(top_level_forum)
+%div[top_level_forum, :top_level]
+  = link_to top_level_forum.name, forum_path(top_level_forum), :class => 'name'
   - if top_level_forum.has_description?
-    %p= top_level_forum.description
+    %p.description= top_level_forum.description
+  - if top_level_forum.has_nested_forums?
+    %ul.nested-forums= nested_forums_for top_level_forum
