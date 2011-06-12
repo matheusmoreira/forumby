@@ -1,5 +1,5 @@
 %div[top_level_forum, :top_level]
-  = link_to top_level_forum.name, forum_path(top_level_forum), :class => 'name'
+  = forum_name_for top_level_forum
   - if top_level_forum.has_description?
     %p.description= top_level_forum.description
   - if top_level_forum.has_nested_forums?

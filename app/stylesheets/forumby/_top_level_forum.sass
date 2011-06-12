@@ -1,7 +1,6 @@
 $top-level-forum-padding: 8px
 $top-level-forum-margin: 8px
-$top-level-forum-text-color: $font-color
-$top-level-forum-background-color: #f1f4f7
+$top-level-forum-background-color: lighten($forumby-blue, 20%)
 
 $top-level-forum-name-margin: 0px
 $top-level-forum-name-padding: 0px
@@ -13,20 +12,22 @@ $top-level-forum-description-text-color: darken(white, 70%)
 $top-level-forum-description-font-size: 1em
 
 $top-level-forum-nested-forums-margin: 0px
-$top-level-forum-nested-forums-padding: 4px
+$top-level-forum-nested-forums-padding: 8px
 
 $top-level-forum-nested-forum-margin: 0px 4px
-$top-level-forum-nested-forum-padding: 4px
+$top-level-forum-nested-forum-padding: 0px
+
+$top-level-forum-nested-forum-name-margin: 0px
+$top-level-forum-nested-forum-name-padding: 0px
+$top-level-forum-nested-forum-name-font-size: 1.2em
 
 // -- //
 
 .top_level_forum
-  +round-block
+  +round-top-block
 
   margin: $top-level-forum-margin
   padding: $top-level-forum-padding
-
-  color: $top-level-forum-text-color
 
   background-color: $top-level-forum-background-color
 
@@ -59,3 +60,11 @@ $top-level-forum-nested-forum-padding: 4px
 
     margin: $top-level-forum-nested-forum-margin
     padding: $top-level-forum-nested-forum-padding
+
+    .name
+      +block
+
+      margin: $top-level-forum-nested-forum-name-margin
+      padding: $top-level-forum-nested-forum-name-padding
+
+      font-size: $top-level-forum-nested-forum-name-font-size

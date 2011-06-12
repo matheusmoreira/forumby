@@ -13,7 +13,7 @@ $category-forums-padding: 0px
 
 $category-forum-margin: 0px
 $category-forum-padding: 8px
-$category-forum-background-color: #f1f4f7
+$category-forum-background-color: lighten($forumby-blue, 23%)
 $category-forum-border-top-width: 2px
 $category-forum-border-top-style: solid
 $category-forum-border-top-color: white
@@ -28,16 +28,19 @@ $category-forum-description-text-color: darken(white, 70%)
 $category-forum-description-font-size: 1em
 
 $category-forum-nested-forums-margin: 0px
-$category-forum-nested-forums-padding: 4px
+$category-forum-nested-forums-padding: 8px
 
 $category-forum-nested-forum-margin: 0px 4px
-$category-forum-nested-forum-padding: 4px
+$category-forum-nested-forum-padding: 0px
+
+$category-forum-nested-forum-name-margin: 0px
+$category-forum-nested-forum-name-padding: 0px
+$category-forum-nested-forum-name-font-size: 1.2em
 
 // -- //
 
 .category
-  +border-top-radius($default-border-radius)
-  +block
+  +round-top-block
 
   margin: $category-margin
   padding: $category-padding
@@ -103,3 +106,11 @@ $category-forum-nested-forum-padding: 4px
 
       margin: $category-forum-nested-forum-margin
       padding: $category-forum-nested-forum-padding
+
+      .name
+        +block
+
+        margin: $category-forum-nested-forum-name-margin
+        padding: $category-forum-nested-forum-name-padding
+
+        font-size: $category-forum-nested-forum-name-font-size
