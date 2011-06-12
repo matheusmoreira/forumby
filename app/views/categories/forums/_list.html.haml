@@ -1,1 +1,6 @@
-%li[list, :category]= link_to list.name, forum_path(list)
+%li[list, :category]
+  = link_to list.name, forum_path(list), :class => 'name'
+  - if list.has_description?
+    %p.description= list.description
+  - if list.has_nested_forums?
+    %ul.nested-forums= nested_forums_for list
