@@ -1008,77 +1008,45 @@ header #member-panel .links a {
   word-wrap: break-word;
 }
 
-/* line 26, ../../app/stylesheets/forumby/_post.sass */
+/* line 22, ../../app/stylesheets/forumby/_post.sass */
 .post {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -o-border-top-left-radius: 5px;
+  -ms-border-top-left-radius: 5px;
+  -khtml-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -o-border-top-right-radius: 5px;
+  -ms-border-top-right-radius: 5px;
+  -khtml-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
   display: block;
   margin: 8px;
-  padding: 8px;
+  padding: 0px;
   border-width: 1px;
   border-style: solid;
-  border-color: #edeceb;
-  color: #333333;
-  background-color: #edeceb;
+  border-color: #e1e7ee;
+  background-color: #f1f4f7;
 }
-/* line 41, ../../app/stylesheets/forumby/_post.sass */
-.post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+/* line 35, ../../app/stylesheets/forumby/_post.sass */
+.post .member {
+  display: block;
   margin: 0px;
-  color: #222222;
-}
-/* line 46, ../../app/stylesheets/forumby/_post.sass */
-.post .post_member {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  margin: 8px;
   padding: 8px;
-  color: #333333;
-  background-color: #edeceb;
+  background-color: #f1f4f7;
+  word-wrap: break-word;
 }
-/* line 7, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.11.2/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-.post .post_member {
-  *display: inline;
-}
-/* line 56, ../../app/stylesheets/forumby/_post.sass */
-.post .post_member h1, .post .post_member h2, .post .post_member h3, .post .post_member h4, .post .post_member h5, .post .post_member h6 {
+/* line 45, ../../app/stylesheets/forumby/_post.sass */
+.post .content {
+  display: block;
   margin: 0px;
-  color: #222222;
-}
-/* line 61, ../../app/stylesheets/forumby/_post.sass */
-.post article {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  margin: 8px;
-  padding: 8px;
+  padding: 16px;
+  background-color: white;
   font-size: 12px;
   color: #333333;
-  background-color: white;
-}
-/* line 7, ../../../../../../usr/local/rvm/gems/ruby-1.9.2-p180@forumby/gems/compass-0.11.2/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-.post article {
-  *display: inline;
+  word-wrap: break-word;
 }
 
 /* line 3, ../../app/stylesheets/forumby/_footer.sass */
