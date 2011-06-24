@@ -1,5 +1,5 @@
 %div[forum]
-  = forum_name_for forum
+  = forum_link_for forum
   - if forum.has_nested_forums?
     %ul.nested-forums= nested_forums_for forum
   - if forum.has_topics?

@@ -27,14 +27,34 @@ module ApplicationHelper
 
   # Link Helpers
 
-  def link_with_title_to(body, url, title, html_options = {})
-    html_options.merge!(:title => title) if not title.blank?
+  def link_with_title_to(body, url, title = nil, html_options = {})
+    html_options = html_options.merge(:title => title) if not title.blank?
     link_to body, url, html_options
   end
 
   def link_button_to(body, url, html_options = {})
-    html_options.merge!(:class => 'button') { |key, old, new| "#{old} #{new}" }
+    html_options = html_options.merge(:class => 'button') do |key, old, new|
+      "#{old} #{new}"
+    end
     link_to body, url, html_options
+  end
+
+  def member_link_for(member, html_options = {})
+    link_to member.name, member_path(member), html_options.merge(:class => 'name')
+  end
+
+  def category_link_for(category, html_options = {})
+    link_with_title_to category.name, category_path(category),
+                       category.description, html_options.merge(:class => 'name')
+  end
+
+  def forum_link_for(forum, html_options = {})
+    link_with_title_to forum.name, forum_path(forum), forum.description,
+                       html_options.merge(:class => 'name')
+  end
+
+  def topic_link_for(topic)
+    link_to topic.title, topic_path(topic), :class => 'title'
   end
 
 end
