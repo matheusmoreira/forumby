@@ -35,7 +35,12 @@ Devise.setup do |config|
   # Configure which authentication keys should be case-insensitive.
   # These keys will be downcased upon creating or modifying a user and when used
   # to authenticate or find a user. Default is :email.
-  config.case_insensitive_keys = []
+  config.case_insensitive_keys = [ :email ]
+
+  # Configure which authentication keys should have whitespace stripped.
+  # These keys will have whitespace before and after removed upon creating or
+  # modifying a user and when used to authenticate or find a user. Default is :email.
+  config.strip_whitespace_keys = [ :name, :email ]
 
   # Tell if authentication through request.params is enabled. True by default.
   config.params_authenticatable = true
@@ -48,6 +53,11 @@ Devise.setup do |config|
 
   # The realm used in Http Basic Authentication. "Application" by default.
   # config.http_authentication_realm = "Application"
+
+  # It will change confirmation, password recovery and other workflows
+  # to behave the same regardless if the e-mail provided was right or wrong.
+  # Does not affect registerable.
+  # config.paranoid = true
 
   # ==> Configuration for :database_authenticatable
   # For bcrypt, this is the cost for hashing the password and defaults to 10. If
@@ -82,6 +92,10 @@ Devise.setup do |config|
   # If true, uses the password salt as remember token. This should be turned
   # to false if you are not using database authenticatable.
   config.use_salt_as_remember_token = true
+
+  # Options to be passed to the created cookie. For instance, you can set
+  # :secure => true in order to force SSL only cookies.
+  config.cookie_options = { :secure => true }
 
   # ==> Configuration for :validatable
   # Range for password length. Default is 6..128.
