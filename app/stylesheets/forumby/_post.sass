@@ -1,20 +1,29 @@
+// Post
+
 $post-margin: 8px
 $post-padding: 0px
-$post-background-color: #f1f4f7
+$post-background-color: $forumby-master-color
 $post-border-width: 1px
 $post-border-style: solid
 $post-border-color: darken($post-background-color, 5%)
 
-$post-member-margin: 0px
-$post-member-padding: 8px
-$post-member-background-color: darken($post-background-color, 0%)
-$post-member-word-wrap: break-word
+$post-author-margin: 0px
+$post-author-padding: 0px
+$post-author-background-color: transparent
+
+$post-author-name-margin: 0px
+$post-author-name-padding: 8px
+$post-author-name-background-color: transparent
+$post-author-name-font-size: 1.4em
+$post-author-name-font-weight: normal
+$post-author-name-word-wrap: break-word
 
 $post-content-margin: 0px
 $post-content-padding: 16px
 $post-content-background-color: white
-$post-content-font-size: $blueprint-font-size
 $post-content-text-color: $font-color
+$post-content-font-size: $blueprint-font-size
+$post-content-font-weight: normal
 $post-content-word-wrap: break-word
 
 // -- //
@@ -32,15 +41,25 @@ $post-content-word-wrap: break-word
 
   background-color: $post-background-color
 
-  .member
+  .author
     +block
 
-    margin: $post-member-margin
-    padding: $post-member-padding
+    margin: $post-author-margin
+    padding: $post-author-padding
 
-    background-color: $post-member-background-color
+    background-color: $post-author-background-color
 
-    word-wrap: $post-member-word-wrap
+    .name
+      +block
+
+      margin: $post-author-name-margin
+      padding: $post-author-name-padding
+
+      background-color: $post-author-name-background-color
+
+      font-size: $post-author-name-font-size
+      font-weight: $post-author-name-font-weight
+      word-wrap: $post-author-name-word-wrap
 
   .content
     +block

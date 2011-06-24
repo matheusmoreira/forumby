@@ -1,52 +1,74 @@
+// Member
+
 $member-margin: 8px
-$member-padding: 8px
-$member-background-color: $forumby-grey
+$member-padding: 0px
+$member-background-color: $forumby-master-color
+$member-border-width: 1px
+$member-border-style: solid
+$member-border-color: darken($member-background-color, 5%)
 
-$member-information-margin: 8px
-$member-information-padding: 8px
-$member-information-border-width: 1px
-$member-information-border-style: solid
-$member-information-border-color: darken($member-background-color, 15%)
-
+$member-name-margin: 0px
+$member-name-padding: 8px
 $member-name-font-size: 2em
-$member-topic-count-font-size: 1.4em
-$member-post-count-font-size: 1.4em
+$member-name-font-weight: normal
+
+$member-information-margin: 0px
+$member-information-padding: 8px
+
+$member-information-topic-count-margin: 0px
+$member-information-topic-count-padding: 0px 8px
+$member-information-topic-count-font-size: 1.4em
+$member-information-topic-count-font-weight: normal
+
+$member-information-post-count-margin: 0px
+$member-information-post-count-padding: 0px 8px
+$member-information-post-count-font-size: 1.4em
+$member-information-post-count-font-weight: normal
 
 // -- //
 
 .member
-  +round-block
+  +round-top-block
 
   margin: $member-margin
   padding: $member-padding
 
+  border:
+    width: $member-border-width
+    style: $member-border-style
+    color: $member-border-color
+
   background-color: $member-background-color
 
-  .member-portrait
-    +inline-block
+  .name
+    +block
 
-    .name
-      +inline-block
+    margin: $member-name-margin
+    padding: $member-name-padding
 
-      font-size: $member-name-font-size
+    font-size: $member-name-font-size
+    font-weight: $member-name-font-weight
 
   .member-information
-    +inline-block
+    +block
 
     margin: $member-information-margin
     padding: $member-information-padding
 
-    border-left:
-      width: $member-information-border-width
-      style: $member-information-border-style
-      color: $member-information-border-color
-
     .topic-count
-      +block
+      +inline-block
 
-      font-size: $member-topic-count-font-size
+      margin: $member-information-topic-count-margin
+      padding: $member-information-topic-count-padding
+
+      font-size: $member-information-topic-count-font-size
+      font-weight: $member-information-topic-count-font-weight
 
     .post-count
-      +block
+      +inline-block
 
-      font-size: $member-post-count-font-size
+      margin: $member-information-post-count-margin
+      padding: $member-information-post-count-padding
+
+      font-size: $member-information-post-count-font-size
+      font-weight: $member-information-post-count-font-weight

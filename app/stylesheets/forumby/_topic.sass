@@ -1,6 +1,8 @@
+// Topic
+
 $topic-margin: 8px
 $topic-padding: 0px
-$topic-background-color: #f1f4f7
+$topic-background-color: $forumby-master-color
 $topic-border-width: 1px
 $topic-border-style: solid
 $topic-border-color: darken($topic-background-color, 5%)
@@ -12,22 +14,17 @@ $topic-title-font-size: 2em
 $topic-posts-margin: 0px
 $topic-posts-padding: 0px
 
-$topic-post-box-orient: horizontal
-$topic-post-box-align: stretch
-$topic-post-margin: 0px
+$topic-post-margin: 8px 0px 0px 0px
 $topic-post-padding: 0px
-$topic-post-width: 100%
 $topic-post-border-top-width: 1px
 $topic-post-border-top-style: solid
-$topic-post-border-top-color: $topic-border-color
+$topic-post-border-top-color: darken($topic-background-color, 10%)
 
 $topic-post-member-margin: 0px
 $topic-post-member-padding: 16px
-$topic-post-member-width: 10%
-$topic-post-member-background-color: darken($topic-background-color, 10%)
+$topic-post-member-background-color: darken($topic-background-color, 5%)
 $topic-post-member-word-wrap: break-word
 
-$topic-post-content-box-flex: 1
 $topic-post-content-margin: 0px
 $topic-post-content-padding: 16px
 $topic-post-content-background-color: white
@@ -65,12 +62,10 @@ $topic-post-content-word-wrap: break-word
     padding: $topic-posts-padding
 
   .topic_post
-    +box
+    +block
 
     margin: $topic-post-margin
     padding: $topic-post-padding
-
-    width: $topic-post-width
 
     border-top:
       width: $topic-post-border-top-width
@@ -78,18 +73,17 @@ $topic-post-content-word-wrap: break-word
       color: $topic-post-border-top-color
 
     .topic_post_member
+      +block
 
       margin: $topic-post-member-margin
       padding: $topic-post-member-padding
-
-      width: $topic-post-member-width
 
       background-color: $topic-post-member-background-color
 
       word-wrap: $topic-post-member-word-wrap
 
     .content
-      +box-flex($topic-post-content-box-flex)
+      +block
 
       margin: $topic-post-content-margin
       padding: $topic-post-content-padding

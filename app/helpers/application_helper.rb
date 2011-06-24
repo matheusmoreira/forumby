@@ -33,9 +33,7 @@ module ApplicationHelper
   end
 
   def link_button_to(body, url, html_options = {})
-    html_options = html_options.merge(:class => 'button') do |key, old, new|
-      "#{old} #{new}"
-    end
+    html_options = html_options.merge(:class => 'button') { |key, old, new| "#{old} #{new}" }
     link_to body, url, html_options
   end
 
@@ -44,17 +42,15 @@ module ApplicationHelper
   end
 
   def category_link_for(category, html_options = {})
-    link_with_title_to category.name, category_path(category),
-                       category.description, html_options.merge(:class => 'name')
+    link_with_title_to category.name, category_path(category), category.description, html_options.merge(:class => 'name')
   end
 
   def forum_link_for(forum, html_options = {})
-    link_with_title_to forum.name, forum_path(forum), forum.description,
-                       html_options.merge(:class => 'name')
+    link_with_title_to forum.name, forum_path(forum), forum.description, html_options.merge(:class => 'name')
   end
 
-  def topic_link_for(topic)
-    link_to topic.title, topic_path(topic), :class => 'title'
+  def topic_link_for(topic, html_options = {})
+    link_to topic.title, topic_path(topic), html_options.merge(:class => 'title')
   end
 
 end

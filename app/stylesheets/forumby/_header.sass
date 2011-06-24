@@ -1,53 +1,97 @@
-@import partials/block
+// Header
 
+$header-margin: 0px
 $header-padding: 8px
-$member-panel-border-radius: 8px
 $header-background-color: #80a6d5
-$forum-name-color: #fff
+$header-border-bottom-width: 1px
+$header-border-bottom-style: solid
+$header-border-bottom-color: #333
+
+$header-forum-name-margin: 24px 0px
+$header-forum-name-padding: 0px
+$header-forum-name-font-size: 6em
+$header-forum-name-font-weight: normal
+$header-forum-name-text-color: white
+
+$header-member-panel-margin: 8px
+$header-member-panel-padding: 8px
+$header-member-panel-background-color: lighten($header-background-color, 10%)
+
+$header-member-panel-member-name-margin: 0px
+$header-member-panel-member-name-padding: 8px
+$header-member-panel-member-name-font-size: 2em
+$header-member-panel-member-name-font-weight: normal
+
+$header-member-panel-links-margin: 0px
+$header-member-panel-links-padding: 8px
+$header-member-panel-links-border-left-width: 1px
+$header-member-panel-links-border-left-style: solid
+$header-member-panel-links-border-left-color: darken($header-member-panel-background-color, 10%)
+
+$header-member-panel-link-margin: 0px
+$header-member-panel-link-padding: 8px
+$header-member-panel-link-font-size: 1.4em
+$header-member-panel-link-font-weight: normal
+
+// -- //
 
 header
   +block
 
-  background-color: $header-background-color
-
-  border-bottom: 1px solid #333
+  margin: $header-margin
   padding: $header-padding
+
+  border-bottom:
+    width: $header-border-bottom-width
+    style: $header-border-bottom-style
+    color: $header-border-bottom-color
+
+  background-color: $header-background-color
 
   #forum-name
     +inline-block
 
-    margin: 24px 0px
+    margin: $header-forum-name-margin
+    padding: $header-forum-name-padding
 
-    font-size: 6em
-    color: $forum-name-color
+    font-size: $header-forum-name-font-size
+    font-weight: $header-forum-name-font-weight
+    color: $header-forum-name-text-color
 
   #member-panel
-    +border-radius($member-panel-border-radius)
-    +inline-block
+    +round-inline-block
     +float-right
 
-    background-color: $header-background-color + #222
+    margin: $header-member-panel-margin
+    padding: $header-member-panel-padding
 
-    margin: 8px
-    padding: 8px
+    background-color: $header-member-panel-background-color
 
-    p
+    .member-name
       +inline-block
 
-      margin: 0px
+      margin: $header-member-panel-member-name-margin
+      padding: $header-member-panel-member-name-padding
 
-      font-size: 2em
+      font-size: $header-member-panel-member-name-font-size
+      font-weight: $header-member-panel-member-name-font-weight
 
     .links
       +inline-block
 
-      border-left: 1px solid $header-background-color - #111
-      margin-left: 4px
-      padding-left: 4px
+      margin: $header-member-panel-links-margin
+      padding: $header-member-panel-links-padding
+
+      border-left:
+        width: $header-member-panel-links-border-left-width
+        style: $header-member-panel-links-border-left-style
+        color: $header-member-panel-links-border-left-color
 
       a
         +inline-block
 
-        padding: 4px
+        margin: $header-member-panel-link-margin
+        padding: $header-member-panel-link-padding
 
-        font-size: 1.4em
+        font-size: $header-member-panel-link-font-size
+        font-weight: $header-member-panel-link-font-weight

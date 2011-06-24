@@ -1,10 +1,16 @@
+// Forum
+
 $forum-margin: 8px
 $forum-padding: 0px
-$forum-background-color: lighten($forumby-blue, 20%)
+$forum-background-color: $forumby-master-color
+$forum-border-width: 1px
+$forum-border-style: solid
+$forum-border-color: darken($forum-background-color, 5%)
 
 $forum-name-margin: 0px
-$forum-name-padding: 8px 8px 4px 8px
+$forum-name-padding: 8px
 $forum-name-font-size: 2em
+$forum-name-font-weight: normal
 
 $forum-nested-forums-margin: 0px
 $forum-nested-forums-padding: 0px 16px
@@ -15,20 +21,22 @@ $forum-nested-forum-padding: 8px
 $forum-nested-forum-name-margin: 0px
 $forum-nested-forum-name-padding: 0px
 $forum-nested-forum-name-font-size: 1.2em
+$forum-nested-forum-name-font-weight: normal
 
 $forum-topics-margin: 0px
 $forum-topics-padding: 0px
 
 $forum-topic-margin: 0px
 $forum-topic-padding: 8px
-$forum-topic-border-top-width: 2px
+$forum-topic-background-color: darken($forum-background-color, 5%)
+$forum-topic-border-top-width: 1px
 $forum-topic-border-top-style: solid
-$forum-topic-border-top-color: white
-$forum-topic-background-color: lighten($forumby-blue, 23%)
+$forum-topic-border-top-color: darken($forum-topic-background-color, 5%)
 
 $forum-topic-title-margin: 0px
 $forum-topic-title-padding: 0px
-$forum-topic-title-font-size: 1.5em
+$forum-topic-title-font-size: 1.4em
+$forum-topic-title-font-weight: normal
 
 // -- //
 
@@ -37,6 +45,11 @@ $forum-topic-title-font-size: 1.5em
 
   margin: $forum-margin
   padding: $forum-padding
+
+  border:
+    width: $forum-border-width
+    style: $forum-border-style
+    color: $forum-border-color
 
   background-color: $forum-background-color
 
@@ -47,6 +60,7 @@ $forum-topic-title-font-size: 1.5em
     padding: $forum-name-padding
 
     font-size: $forum-name-font-size
+    font-weight: $forum-name-font-weight
 
   .nested-forums
     +block
@@ -67,6 +81,7 @@ $forum-topic-title-font-size: 1.5em
       padding: $forum-nested-forum-name-padding
 
       font-size: $forum-nested-forum-name-font-size
+      font-weight: $forum-nested-forum-name-font-weight
 
   .topics
     +block
@@ -97,3 +112,4 @@ $forum-topic-title-font-size: 1.5em
       padding: $forum-topic-title-padding
 
       font-size: $forum-topic-title-font-size
+      font-weight: $forum-topic-title-font-weight

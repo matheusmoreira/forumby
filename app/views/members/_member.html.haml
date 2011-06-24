@@ -1,10 +1,5 @@
 %div[member]
-  .member-portrait
-    = link_to member.name, member_path(member), :class => 'name'
+  = member_link_for member
   .member-information
-    = link_to t('members.topics.count', :count => member.topic_count),
-              member_topics_path(member),
-              :class => 'topic-count'
-    = link_to t('members.posts.count', :count => member.post_count),
-              member_posts_path(member),
-              :class => 'post-count'
+    = topic_count_for member
+    = post_count_for member

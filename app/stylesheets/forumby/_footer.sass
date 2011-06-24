@@ -1,13 +1,31 @@
-@import partials/block
+// Footer
+
+$footer-margin: 0px
+$footer-padding: 24px
+$footer-border-top-width: 1px
+$footer-border-top-style: solid
+$footer-border-top-color: #333
+
+$footer-copyright-font-size: 1.4em
+$footer-copyright-font-weight: normal
+$footer-copyright-text-align: center
+
+// -- //
 
 footer
   +block
 
-  border-top: 1px solid #333
-  padding-top: 24px
+  margin: $footer-margin
+  padding: $footer-padding
 
-  p
+  border-top:
+    width: $footer-border-top-width
+    style: $footer-border-top-style
+    color: $footer-border-top-color
+
+  .copyright
     +block
 
-    font-size: 1.2em
-    text-align: center
+    font-size: $footer-copyright-font-size
+    font-weight: $footer-copyright-font-weight
+    text-align: $footer-copyright-text-align

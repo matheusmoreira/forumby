@@ -1,25 +1,33 @@
-$top-level-forum-padding: 8px
+// Top Level Forum
+
 $top-level-forum-margin: 8px
-$top-level-forum-background-color: lighten($forumby-blue, 20%)
+$top-level-forum-padding: 0px
+$top-level-forum-background-color: darken($forumby-master-color, 5%)
+$top-level-forum-border-width: 1px
+$top-level-forum-border-style: solid
+$top-level-forum-border-color: darken($top-level-forum-background-color, 5%)
 
 $top-level-forum-name-margin: 0px
-$top-level-forum-name-padding: 0px
+$top-level-forum-name-padding: 8px
 $top-level-forum-name-font-size: 2em
+$top-level-forum-name-font-weight: normal
 
-$top-level-forum-description-margin: 0px 0px 4px 0px
-$top-level-forum-description-padding: 0px
-$top-level-forum-description-text-color: darken(white, 70%)
+$top-level-forum-description-margin: 0px
+$top-level-forum-description-padding: 0px 8px 8px 8px
+$top-level-forum-description-text-color: $font-color
 $top-level-forum-description-font-size: 1em
+$top-level-forum-description-font-weight: normal
 
 $top-level-forum-nested-forums-margin: 0px
-$top-level-forum-nested-forums-padding: 8px
+$top-level-forum-nested-forums-padding: 0px 16px
 
-$top-level-forum-nested-forum-margin: 0px 4px
-$top-level-forum-nested-forum-padding: 0px
+$top-level-forum-nested-forum-margin: 0px
+$top-level-forum-nested-forum-padding: 8px
 
 $top-level-forum-nested-forum-name-margin: 0px
 $top-level-forum-nested-forum-name-padding: 0px
 $top-level-forum-nested-forum-name-font-size: 1.2em
+$top-level-forum-nested-forum-name-font-weight: normal
 
 // -- //
 
@@ -28,6 +36,11 @@ $top-level-forum-nested-forum-name-font-size: 1.2em
 
   margin: $top-level-forum-margin
   padding: $top-level-forum-padding
+
+  border:
+    width: $top-level-forum-border-width
+    style: $top-level-forum-border-style
+    color: $top-level-forum-border-color
 
   background-color: $top-level-forum-background-color
 
@@ -38,6 +51,7 @@ $top-level-forum-nested-forum-name-font-size: 1.2em
     padding: $top-level-forum-name-padding
 
     font-size: $top-level-forum-name-font-size
+    font-weight: $top-level-forum-name-font-weight
 
   .description
     +block
@@ -48,6 +62,7 @@ $top-level-forum-nested-forum-name-font-size: 1.2em
     color: $top-level-forum-description-text-color
 
     font-size: $top-level-forum-description-font-size
+    font-weight: $top-level-forum-description-font-weight
 
   .nested-forums
     +block
@@ -68,3 +83,4 @@ $top-level-forum-nested-forum-name-font-size: 1.2em
       padding: $top-level-forum-nested-forum-name-padding
 
       font-size: $top-level-forum-nested-forum-name-font-size
+      font-weight: $top-level-forum-nested-forum-name-font-weight
